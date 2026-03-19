@@ -1,0 +1,138 @@
+---
+import { getCollection, render } from 'astro:content'
+import Layout from '../../layouts/Layout.astro'
+import ToolCard from '../../components/ToolCard.astro'
+import { getToolBySlug, getCategoryBySlug } from '../../lib/mock-data'
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles')
+  return articles.map((article) => ({
+    params: { slug: article.id },
+    props: { article },
+  }))
+}
+
+interface Props {
+  article: Awaited<ReturnType<typeof getCollection<'articles'>>>[number]
+}
+
+const { article } = Astro.props
+const { Content, headings } = await render(article)
+
+// Get related tools from frontmatter
+const relatedTools = article.data.relatedTools
+  .map((slug: string) => getToolBySlug(slug))
+  .filter(Boolean)
+
+// Build TOC from H2 and H3 headings
+const toc = headings.filter(h => h.depth === 2 || h.depth === 3)
+
+const formattedDate = new Intl.DateTimeFormat('zh-CN', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+}).format(article.data.publishedAt)
+---
+
+<Layout title={article.data.title} description={article.data.description}>
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 flex text-sm text-gray-500">
+      <a href="/" class="hover:text-indigo-600">首页</a>
+      <span class="mx-2">/</span>
+      <a href="/articles" class="hover:text-indigo-600">文章</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900 truncate max-w-[200px]">{article.data.title}</span>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-gray-900 sm:text-4xl leading-tight">
+        {article.data.title}
+      </h1>
+      <div class="mt-4 flex flex-wrap items-center gap-4 text-sm text-gray-500">
+        <span>{article.data.author}</span>
+        <span>·</span>
+        <time datetime={article.data.publishedAt.toISOString()}>{formattedDate}</time>
+      </div>
+      {article.data.keywords.length > 0 && (
+        <div class="mt-4 flex flex-wrap gap-2">
+          {article.data.keywords.map((keyword: string) => (
+            <span class="rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-600">
+              {keyword}
+            </span>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <div class="lg:grid lg:grid-cols-[1fr_220px] lg:gap-8">
+      <!-- Main Content -->
+      <div class="min-w-0">
+        <!-- Description Box -->
+        <div class="mb-8 rounded-lg bg-indigo-50 p-4">
+          <p class="text-indigo-900">{article.data.description}</p>
+        </div>
+
+        <!-- Article Body -->
+        <div class="prose prose-gray max-w-none prose-headings:scroll-mt-20 prose-a:text-indigo-600 prose-a:no-underline hover:prose-a:underline prose-code:rounded prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:text-gray-800 prose-code:before:content-none prose-code:after:content-none prose-pre:bg-gray-900 prose-img:rounded-lg">
+          <Content />
+        </div>
+
+        <!-- Related Tools -->
+        {relatedTools.length > 0 && (
+          <section class="mt-12 border-t border-gray-200 pt-8">
+            <h2 class="mb-6 text-xl font-semibold text-gray-900">文章提到的工具</h2>
+            <div class="grid gap-4 sm:grid-cols-2">
+              {relatedTools.map((tool: any) => (
+                <ToolCard
+                  name={tool.name}
+                  descriptionShort={tool.descriptionShort}
+                  url={`/tool/${tool.slug}`}
+                  logoUrl={tool.logoUrl}
+                  pricingModel={tool.pricingModel}
+                  categoryPrimary={tool.categoryPrimary}
+                  chineseSupport={tool.chineseSupport}
+                  tags={tool.tags}
+                  editorScore={tool.editorScore}
+                />
+              ))}
+            </div>
+          </section>
+        )}
+
+        <!-- Back Link -->
+        <div class="mt-12">
+          <a href="/articles" class="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            返回文章列表
+          </a>
+        </div>
+      </div>
+
+      <!-- Sidebar TOC -->
+      {toc.length > 0 && (
+        <aside class="hidden lg:block">
+          <div class="sticky top-20">
+            <h3 class="mb-4 text-sm font-semibold text-gray-900">目录</h3>
+            <nav class="space-y-2 text-sm">
+              {toc.map((heading) => (
+                <a
+                  href={`#${heading.slug}`}
+                  class:list={[
+                    'block text-gray-600 hover:text-indigo-600 transition-colors',
+                    heading.depth === 3 && 'pl-4'
+                  ]}
+                >
+                  {heading.text}
+                </a>
+              ))}
+            </nav>
+          </div>
+        </aside>
+      )}
+    </div>
+  </article>
+</Layout>
