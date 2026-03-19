@@ -31,6 +31,11 @@ console.log(`📦 Loaded ${tools.length} tools from ${jsonPath}`)
 if (dryRun) console.log('🔍 DRY RUN — no writes')
 
 // Map Josh's field names to our DB columns
+// JSON → DB field mapping:
+//   platform → platforms
+//   featured (bool) → featured_placement (JSONB)
+//   company → company (JSONB)
+//   ratings → editor_ratings (JSONB, to avoid collision with user ratings table)
 function mapTool(t) {
   return {
     id: t.id,
@@ -44,37 +49,45 @@ function mapTool(t) {
     category_primary: t.category_primary,
     categories_secondary: t.categories_secondary || [],
     pricing_model: t.pricing_model,
-    chinese_support: t.chinese_support || 'english-only',
-    platforms: t.platform || t.platforms || [],
+    chinese_support: t.chinese_support || 'supported',  // Josh's data is zh-locale, default to supported
+    platforms: t.platform || t.platforms || [],  // Josh uses "platform", DB uses "platforms"
     open_source: t.open_source || false,
-    status: 'published',  // Josh's data is pre-verified
+    status: t.status || 'published',
     tool_status: t.tool_status || 'active',
     verified_at: t.verified_at || new Date().toISOString(),
-    editor_score: t.editor_score || null,
+    editor_score: t.editor_score || (t.ratings?.overall ? Math.round(t.ratings.overall * 2) / 1 : null),
     use_cases: t.use_cases || [],
     workflow_tags: t.workflow_tags || [],
     model_base: t.model_base || [],
     review: t.review || {},
     affiliate: t.affiliate || {},
+    featured_placement: t.featured ? { promoted: true, tier: 'basic' } : {},
     api_available: t.api_available || false,
     github_url: t.github_url || null,
     pricing_detail: t.pricing_detail || {},
     traffic_estimate: t.traffic_estimate || {},
-    tags: t.tags || [],  // Note: tags go into tool_tags junction, but store in array too for search
+    company: t.company || {},
+    editor_ratings: t.ratings || {},
+    submitted_by: null,  // Josh's data doesn't have auth user ids
+    created_at: t.created_at || new Date().toISOString(),
+    updated_at: t.updated_at || new Date().toISOString(),
   }
 }
 
-// Upsert tools (handle UNIQUE(slug, locale) constraint)
 async function importTools() {
   let success = 0
   let errors = 0
 
-  // Batch upsert (Supabase supports up to ~1000 rows)
   const mapped = tools.map(mapTool)
 
   if (dryRun) {
-    console.log('\nSample mapped record:')
+    console.log('\n📋 Sample mapped record:')
     console.log(JSON.stringify(mapped[0], null, 2))
+    console.log(`\n📊 Field mapping check:`)
+    console.log(`  platform[] → platforms[]: ${mapped[0].platforms}`)
+    console.log(`  featured → featured_placement: ${JSON.stringify(mapped[0].featured_placement)}`)
+    console.log(`  ratings → editor_ratings: ${JSON.stringify(mapped[0].editor_ratings)}`)
+    console.log(`  company: ${JSON.stringify(mapped[0].company)}`)
     console.log(`\n✅ ${mapped.length} tools would be imported`)
     return
   }
@@ -88,47 +101,68 @@ async function importTools() {
 
     if (error) {
       console.error(`❌ Batch ${i}-${i + batch.length}: ${error.message}`)
-      errors += batch.length
+      // Try one by one to identify the problem record
+      for (const tool of batch) {
+        const { error: singleErr } = await supabase
+          .from('tools')
+          .upsert(tool, { onConflict: 'slug,locale' })
+        if (singleErr) {
+          console.error(`  ❌ ${tool.name} (${tool.slug}): ${singleErr.message}`)
+          errors++
+        } else {
+          success++
+        }
+      }
     } else {
       success += batch.length
-      console.log(`✅ Batch ${i}-${i + batch.length}: ${batch.length} tools imported`)
+      console.log(`✅ Batch ${Math.floor(i/25)+1}: ${batch.length} tools imported (${batch.map(t=>t.name).join(', ')})`)
     }
   }
 
   // Handle tags → tool_tags junction table
   console.log('\n📎 Syncing tags...')
+  let tagCount = 0
   for (const t of tools) {
     if (!t.tags?.length) continue
 
+    // Get tool id from DB
+    const { data: dbTool } = await supabase
+      .from('tools')
+      .select('id')
+      .eq('slug', t.slug)
+      .eq('locale', t.locale || 'zh')
+      .single()
+
+    if (!dbTool) {
+      console.error(`  ⚠️ Tool not found: ${t.slug}`)
+      continue
+    }
+
     for (const tagName of t.tags) {
-      const tagSlug = tagName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\u4e00-\u9fff-]/g, '')
+      const tagSlug = tagName
+        .toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^a-z0-9\u4e00-\u9fff-]/g, '')
+        || tagName.toLowerCase()
 
       // Upsert tag
-      const { data: tag } = await supabase
+      const { data: tag, error: tagErr } = await supabase
         .from('tags')
         .upsert({ name: tagName, slug: tagSlug }, { onConflict: 'name' })
         .select('id')
         .single()
 
       if (tag) {
-        // Get tool id
-        const { data: tool } = await supabase
-          .from('tools')
-          .select('id')
-          .eq('slug', t.slug)
-          .eq('locale', t.locale || 'zh')
-          .single()
-
-        if (tool) {
-          await supabase
-            .from('tool_tags')
-            .upsert({ tool_id: tool.id, tag_id: tag.id }, { onConflict: 'tool_id,tag_id' })
-        }
+        const { error: jtErr } = await supabase
+          .from('tool_tags')
+          .upsert({ tool_id: dbTool.id, tag_id: tag.id }, { onConflict: 'tool_id,tag_id' })
+        if (!jtErr) tagCount++
       }
     }
   }
 
-  console.log(`\n📊 Results: ${success} success, ${errors} errors out of ${mapped.length} total`)
+  console.log(`✅ ${tagCount} tool-tag associations created`)
+  console.log(`\n📊 Import complete: ${success} success, ${errors} errors out of ${mapped.length} total`)
 }
 
 importTools().catch(console.error)
