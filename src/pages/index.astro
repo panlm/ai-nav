@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="首页">
+  <section class="mx-auto max-w-7xl px-4 py-16 text-center">
+    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+      发现最好的 <span class="text-indigo-600">AI 工具</span>
+    </h1>
+    <p class="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
+      精选优质 AI 工具，分类浏览、搜索筛选、评分收藏 — 一站搞定。
+    </p>
+    <div class="mt-8">
+      <input
+        type="text"
+        placeholder="搜索 AI 工具..."
+        class="w-full max-w-xl rounded-xl border border-gray-300 px-4 py-3 text-lg shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+      />
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-4 pb-16">
+    <h2 class="mb-6 text-2xl font-semibold">🔥 精选工具</h2>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {[1, 2, 3].map(() => (
+        <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+          <div class="mb-3 flex items-center gap-3">
+            <div class="h-10 w-10 rounded-lg bg-indigo-100"></div>
+            <div>
+              <h3 class="font-semibold">示例工具</h3>
+              <span class="text-xs text-green-600">免费</span>
+            </div>
+          </div>
+          <p class="text-sm text-gray-600">这是一个示例工具卡片，后续将从 Supabase 动态加载。</p>
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>
