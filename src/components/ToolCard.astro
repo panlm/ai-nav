@@ -1,32 +1,44 @@
 ---
 interface Props {
   name: string
-  description: string
+  descriptionShort: string
   url: string
   logoUrl?: string
-  pricing: string
-  category: string
+  pricingModel: string
+  categoryPrimary: string
+  chineseSupport: string
   tags?: string[]
+  editorScore?: number
 }
 
-const { name, description, url, logoUrl, pricing, category, tags = [] } = Astro.props
+const { name, descriptionShort, url, logoUrl, pricingModel, categoryPrimary, chineseSupport, tags = [], editorScore } = Astro.props
 
 const pricingColors: Record<string, string> = {
   free: 'text-green-600 bg-green-50',
   freemium: 'text-blue-600 bg-blue-50',
   paid: 'text-orange-600 bg-orange-50',
-  open_source: 'text-purple-600 bg-purple-50',
+  enterprise: 'text-red-600 bg-red-50',
+  'open-source': 'text-purple-600 bg-purple-50',
+  'contact-sales': 'text-gray-600 bg-gray-100',
 }
 
 const pricingLabels: Record<string, string> = {
   free: '免费',
   freemium: '免费增值',
   paid: '付费',
-  open_source: '开源',
+  enterprise: '企业版',
+  'open-source': '开源',
+  'contact-sales': '联系销售',
+}
+
+const chineseBadge: Record<string, { label: string; class: string } | null> = {
+  native: { label: '中文原生', class: 'text-red-600 bg-red-50' },
+  supported: { label: '支持中文', class: 'text-orange-600 bg-orange-50' },
+  'english-only': null,
 }
 ---
 
-<a href={url} target="_blank" rel="noopener" class="group block rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md hover:border-indigo-200">
+<a href={url} class="group block rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md hover:border-indigo-200">
   <div class="mb-3 flex items-center gap-3">
     {logoUrl ? (
       <img src={logoUrl} alt={name} class="h-10 w-10 rounded-lg object-cover" />
@@ -35,14 +47,26 @@ const pricingLabels: Record<string, string> = {
         {name.charAt(0)}
       </div>
     )}
-    <div class="flex-1">
-      <h3 class="font-semibold text-gray-900 group-hover:text-indigo-600">{name}</h3>
-      <span class={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${pricingColors[pricing] || 'text-gray-600 bg-gray-50'}`}>
-        {pricingLabels[pricing] || pricing}
-      </span>
+    <div class="flex-1 min-w-0">
+      <div class="flex items-center gap-2">
+        <h3 class="font-semibold text-gray-900 group-hover:text-indigo-600 truncate">{name}</h3>
+        {editorScore && (
+          <span class="shrink-0 text-xs font-medium text-indigo-600">{editorScore}分</span>
+        )}
+      </div>
+      <div class="mt-0.5 flex flex-wrap gap-1">
+        <span class={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${pricingColors[pricingModel] || 'text-gray-600 bg-gray-50'}`}>
+          {pricingLabels[pricingModel] || pricingModel}
+        </span>
+        {chineseBadge[chineseSupport] && (
+          <span class={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${chineseBadge[chineseSupport]!.class}`}>
+            {chineseBadge[chineseSupport]!.label}
+          </span>
+        )}
+      </div>
     </div>
   </div>
-  <p class="mb-3 text-sm text-gray-600 line-clamp-2">{description}</p>
+  <p class="mb-3 text-sm text-gray-600 line-clamp-2">{descriptionShort}</p>
   {tags.length > 0 && (
     <div class="flex flex-wrap gap-1">
       {tags.slice(0, 3).map((tag) => (

@@ -22,7 +22,15 @@ const pricingFilters = [
   { value: 'free', label: '免费' },
   { value: 'freemium', label: '免费增值' },
   { value: 'paid', label: '付费' },
-  { value: 'open_source', label: '开源' },
+  { value: 'open-source', label: '开源' },
+  { value: 'enterprise', label: '企业版' },
+]
+
+const chineseFilters = [
+  { value: 'all', label: '全部' },
+  { value: 'native', label: '中文原生' },
+  { value: 'supported', label: '支持中文' },
+  { value: 'english-only', label: '仅英文' },
 ]
 ---
 
@@ -52,37 +60,25 @@ const pricingFilters = [
   <!-- Filters -->
   <section class="mx-auto max-w-7xl px-4 pb-4">
     <div class="flex flex-wrap items-center gap-4">
-      <!-- Pricing Filter -->
+      <!-- Pricing -->
       <div class="flex items-center gap-2">
         <span class="text-sm font-medium text-gray-700">价格:</span>
         <div class="flex gap-1">
-          {pricingFilters.map((f) => (
-            <button
-              class={`rounded-full px-3 py-1 text-sm transition ${
-                f.value === 'all'
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-              }`}
-            >
+          {pricingFilters.map((f, i) => (
+            <button class={`rounded-full px-3 py-1 text-sm transition ${i === 0 ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}>
               {f.label}
             </button>
           ))}
         </div>
       </div>
 
-      <!-- Platform Filter -->
+      <!-- Chinese Support -->
       <div class="flex items-center gap-2">
-        <span class="text-sm font-medium text-gray-700">平台:</span>
+        <span class="text-sm font-medium text-gray-700">中文:</span>
         <div class="flex gap-1">
-          {['全部', 'Web', 'Mac', 'Windows', 'iOS', 'Android', 'API'].map((p, i) => (
-            <button
-              class={`rounded-full px-3 py-1 text-sm transition ${
-                i === 0
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-              }`}
-            >
-              {p}
+          {chineseFilters.map((f, i) => (
+            <button class={`rounded-full px-3 py-1 text-sm transition ${i === 0 ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}>
+              {f.label}
             </button>
           ))}
         </div>
@@ -108,12 +104,14 @@ const pricingFilters = [
         {categoryTools.map((tool) => (
           <ToolCard
             name={tool.name}
-            description={tool.description}
+            descriptionShort={tool.descriptionShort}
             url={`/tool/${tool.slug}`}
             logoUrl={tool.logoUrl}
-            pricing={tool.pricing}
-            category={tool.category}
+            pricingModel={tool.pricingModel}
+            categoryPrimary={tool.categoryPrimary}
+            chineseSupport={tool.chineseSupport}
             tags={tool.tags}
+            editorScore={tool.editorScore}
           />
         ))}
       </div>

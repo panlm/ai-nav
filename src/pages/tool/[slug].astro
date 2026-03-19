@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro'
-import { tools, getToolBySlug } from '../../lib/mock-data'
+import { tools, getToolBySlug, getCategoryBySlug } from '../../lib/mock-data'
 
 export function getStaticPaths() {
   return tools.map((t) => ({
@@ -15,44 +15,40 @@ if (!tool) {
   return Astro.redirect('/404')
 }
 
+const category = getCategoryBySlug(tool.categoryPrimary)
+
 const pricingLabels: Record<string, string> = {
-  free: '免费',
-  freemium: '免费增值',
-  paid: '付费',
-  open_source: '开源',
+  free: '免费', freemium: '免费增值', paid: '付费',
+  enterprise: '企业版', 'open-source': '开源', 'contact-sales': '联系销售',
 }
-
 const pricingColors: Record<string, string> = {
-  free: 'bg-green-100 text-green-700',
-  freemium: 'bg-blue-100 text-blue-700',
-  paid: 'bg-orange-100 text-orange-700',
-  open_source: 'bg-purple-100 text-purple-700',
+  free: 'bg-green-100 text-green-700', freemium: 'bg-blue-100 text-blue-700',
+  paid: 'bg-orange-100 text-orange-700', enterprise: 'bg-red-100 text-red-700',
+  'open-source': 'bg-purple-100 text-purple-700', 'contact-sales': 'bg-gray-100 text-gray-700',
 }
-
+const chineseLabels: Record<string, { label: string; class: string }> = {
+  native: { label: '中文原生', class: 'bg-red-100 text-red-700' },
+  supported: { label: '支持中文', class: 'bg-orange-100 text-orange-700' },
+  'english-only': { label: '仅英文', class: 'bg-gray-100 text-gray-600' },
+}
 const platformIcons: Record<string, string> = {
-  web: '🌐',
-  mac: '🍎',
-  windows: '🪟',
-  linux: '🐧',
-  ios: '📱',
-  android: '🤖',
-  api: '🔌',
+  Web: '🌐', Mac: '🍎', Win: '🪟', Linux: '🐧',
+  iOS: '📱', Android: '🤖', API: '🔌',
+  'Chrome Extension': '🧩', 'wechat-mini': '💬',
 }
 ---
 
-<Layout title={`${tool.name} — AI 工具详情`} description={tool.description}>
-  <!-- Breadcrumb -->
+<Layout title={`${tool.name} — AI 工具详情`} description={tool.descriptionShort}>
   <div class="mx-auto max-w-4xl px-4 pt-6">
     <nav class="flex text-sm text-gray-500">
       <a href="/" class="hover:text-indigo-600">首页</a>
       <span class="mx-2">/</span>
-      <a href={`/category/${tool.categorySlug}`} class="hover:text-indigo-600">{tool.category}</a>
+      <a href={`/category/${tool.categoryPrimary}`} class="hover:text-indigo-600">{category?.name || tool.categoryPrimary}</a>
       <span class="mx-2">/</span>
       <span class="text-gray-900">{tool.name}</span>
     </nav>
   </div>
 
-  <!-- Tool Detail -->
   <article class="mx-auto max-w-4xl px-4 py-8">
     <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
       <!-- Header -->
@@ -65,23 +61,19 @@ const platformIcons: Record<string, string> = {
           </div>
         )}
         <div class="flex-1">
-          <div class="flex items-center gap-3">
+          <div class="flex flex-wrap items-center gap-2">
             <h1 class="text-2xl font-bold text-gray-900">{tool.name}</h1>
-            <span class={`rounded-full px-2.5 py-0.5 text-xs font-medium ${pricingColors[tool.pricing]}`}>
-              {pricingLabels[tool.pricing]}
+            <span class={`rounded-full px-2.5 py-0.5 text-xs font-medium ${pricingColors[tool.pricingModel]}`}>
+              {pricingLabels[tool.pricingModel]}
+            </span>
+            <span class={`rounded-full px-2.5 py-0.5 text-xs font-medium ${chineseLabels[tool.chineseSupport].class}`}>
+              {chineseLabels[tool.chineseSupport].label}
             </span>
             {tool.openSource && (
-              <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-700">
-                开源
-              </span>
-            )}
-            {tool.chineseSupport && (
-              <span class="rounded-full bg-red-50 px-2.5 py-0.5 text-xs font-medium text-red-600">
-                支持中文
-              </span>
+              <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-700">开源</span>
             )}
           </div>
-          <p class="mt-1 text-sm text-gray-500">{tool.category}</p>
+          <p class="mt-1 text-sm text-gray-500">{category?.name}</p>
         </div>
         <div class="text-right">
           <div class="text-3xl font-bold text-indigo-600">{tool.editorScore}</div>
@@ -89,39 +81,45 @@ const platformIcons: Record<string, string> = {
         </div>
       </div>
 
-      <!-- Description -->
+      <!-- Short Description -->
+      <div class="mt-6 rounded-lg bg-indigo-50 p-4">
+        <p class="text-indigo-900">{tool.descriptionShort}</p>
+      </div>
+
+      <!-- Long Description -->
       <div class="mt-6">
-        <h2 class="text-lg font-semibold text-gray-900">简介</h2>
-        <p class="mt-2 leading-relaxed text-gray-700">{tool.description}</p>
+        <h2 class="text-lg font-semibold text-gray-900">详细介绍</h2>
+        <p class="mt-2 leading-relaxed text-gray-700">{tool.descriptionLong}</p>
       </div>
 
       <!-- Info Grid -->
       <div class="mt-6 grid gap-6 sm:grid-cols-2">
-        <!-- Platforms -->
         <div>
           <h3 class="text-sm font-medium text-gray-500">支持平台</h3>
           <div class="mt-2 flex flex-wrap gap-2">
             {tool.platforms.map((p) => (
               <span class="inline-flex items-center gap-1 rounded-lg bg-gray-100 px-3 py-1 text-sm">
                 <span>{platformIcons[p] || '📦'}</span>
-                <span class="capitalize">{p}</span>
+                <span>{p}</span>
               </span>
             ))}
           </div>
         </div>
-
-        <!-- Tags -->
         <div>
           <h3 class="text-sm font-medium text-gray-500">标签</h3>
           <div class="mt-2 flex flex-wrap gap-2">
             {tool.tags.map((tag) => (
-              <span class="rounded-lg bg-indigo-50 px-3 py-1 text-sm text-indigo-600">
-                {tag}
-              </span>
+              <span class="rounded-lg bg-indigo-50 px-3 py-1 text-sm text-indigo-600">{tag}</span>
             ))}
           </div>
         </div>
       </div>
+
+      {tool.verifiedAt && (
+        <div class="mt-4 text-xs text-gray-400">
+          ✅ 最后验证: {tool.verifiedAt}
+        </div>
+      )}
 
       <!-- CTA -->
       <div class="mt-8 flex items-center gap-3">
