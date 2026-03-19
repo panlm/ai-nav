@@ -21,6 +21,16 @@ export interface Category {
   toolCount: number
 }
 
+export interface ToolReview {
+  tested: boolean
+  testedAt?: string
+  verdict?: string
+  pros?: string[]
+  cons?: string[]
+  bestFor?: string
+  alternatives?: string[]
+}
+
 export interface Tool {
   id: string
   name: string
@@ -40,6 +50,14 @@ export interface Tool {
   tags: string[]
   featured: boolean
   verifiedAt?: string
+  // Differentiation fields
+  useCases: string[]
+  workflowTags: string[]
+  modelBase: string[]
+  review?: ToolReview
+  // Technical fields
+  apiAvailable: boolean
+  githubUrl?: string
 }
 
 export const categories: Category[] = [

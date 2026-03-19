@@ -58,15 +58,24 @@ CREATE TYPE review_status_enum AS ENUM (
 -- Step 2: Alter tools table
 -- ============================================
 
--- 2a: Split description → description_short + description_long
+-- 2a: Drop search_vector first (depends on description column)
+ALTER TABLE tools DROP COLUMN IF EXISTS search_vector;
+
+-- 2b: Split description → description_short + description_long
 ALTER TABLE tools RENAME COLUMN description TO description_long;
 ALTER TABLE tools ADD COLUMN description_short VARCHAR(200) NOT NULL DEFAULT '';
 ALTER TABLE tools ALTER COLUMN description_long TYPE TEXT;
 
--- 2b: Replace pricing with pricing_model
+-- 2c: Replace pricing with pricing_model
 ALTER TABLE tools ADD COLUMN pricing_model pricing_model_enum NOT NULL DEFAULT 'free';
--- Migrate existing data
-UPDATE tools SET pricing_model = pricing::pricing_model_enum;
+-- Migrate existing data (pricing had CHECK constraint, need explicit mapping)
+UPDATE tools SET pricing_model = CASE pricing
+  WHEN 'free' THEN 'free'::pricing_model_enum
+  WHEN 'freemium' THEN 'freemium'::pricing_model_enum
+  WHEN 'paid' THEN 'paid'::pricing_model_enum
+  WHEN 'open_source' THEN 'open-source'::pricing_model_enum
+  ELSE 'free'::pricing_model_enum
+END;
 ALTER TABLE tools DROP COLUMN pricing;
 
 -- 2c: Replace chinese_support boolean → enum
@@ -95,18 +104,26 @@ END;
 ALTER TABLE tools DROP COLUMN category_id;
 ALTER TABLE tools DROP COLUMN subcategory_id;
 
--- 2e: Replace status text check → enum
+-- 2f: Replace status text check → enum
+-- Must drop RLS policies that reference status first
+DROP POLICY IF EXISTS "Published tools are viewable by everyone" ON tools;
+DROP POLICY IF EXISTS "Authenticated users can submit tools" ON tools;
+
 ALTER TABLE tools ADD COLUMN status_new review_status_enum NOT NULL DEFAULT 'draft';
-UPDATE tools SET status_new = status::review_status_enum;
+UPDATE tools SET status_new = CASE status
+  WHEN 'draft' THEN 'draft'::review_status_enum
+  WHEN 'published' THEN 'published'::review_status_enum
+  WHEN 'archived' THEN 'archived'::review_status_enum
+  WHEN 'rejected' THEN 'rejected'::review_status_enum
+  ELSE 'draft'::review_status_enum
+END;
 ALTER TABLE tools DROP COLUMN status;
 ALTER TABLE tools RENAME COLUMN status_new TO status;
 
 -- 2f: Add tool_status
 ALTER TABLE tools ADD COLUMN tool_status tool_status_enum NOT NULL DEFAULT 'active';
 
--- 2g: Rebuild search_vector with new columns
--- Drop the generated column first, then recreate
-ALTER TABLE tools DROP COLUMN search_vector;
+-- 2h: Rebuild search_vector with new columns
 ALTER TABLE tools ADD COLUMN search_vector TSVECTOR GENERATED ALWAYS AS (
   setweight(to_tsvector('simple', coalesce(name, '')), 'A') ||
   setweight(to_tsvector('simple', coalesce(description_short, '')), 'B') ||
@@ -130,23 +147,32 @@ CREATE INDEX idx_tools_tool_status ON tools (tool_status);
 CREATE INDEX idx_tools_chinese_support ON tools (chinese_support);
 
 -- ============================================
--- Step 4: Update RLS policies
+-- Step 4: Recreate RLS policies with new column types
 -- ============================================
-DROP POLICY IF EXISTS "Published tools are viewable by everyone" ON tools;
 CREATE POLICY "Published tools are viewable by everyone"
   ON tools FOR SELECT
   USING (status = 'published' AND tool_status != 'discontinued');
 
-DROP POLICY IF EXISTS "Authenticated users can submit tools" ON tools;
 CREATE POLICY "Authenticated users can submit tools"
   ON tools FOR INSERT
   TO authenticated
   WITH CHECK (submitted_by = auth.uid() AND status = 'draft');
 
 -- ============================================
--- Step 5: Refresh materialized view
+-- Step 5: Recreate materialized view (old one references dropped columns)
 -- ============================================
-REFRESH MATERIALIZED VIEW CONCURRENTLY tool_stats;
+DROP MATERIALIZED VIEW IF EXISTS tool_stats;
+CREATE MATERIALIZED VIEW tool_stats AS
+SELECT
+  t.id AS tool_id,
+  COUNT(DISTINCT f.user_id) AS favorite_count,
+  COALESCE(ROUND(AVG(r.score)::numeric, 1), 0) AS avg_rating,
+  COUNT(DISTINCT r.user_id) AS rating_count
+FROM tools t
+LEFT JOIN favorites f ON f.tool_id = t.id
+LEFT JOIN ratings r ON r.tool_id = t.id
+GROUP BY t.id;
+CREATE UNIQUE INDEX idx_tool_stats_tool ON tool_stats(tool_id);
 
 -- ============================================
 -- Step 6: Update categories table to match Josh's 18 categories
