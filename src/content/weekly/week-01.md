@@ -1,0 +1,104 @@
+---
+title: "AI 工具周报 #1"
+description: "每周追踪 AI 工具圈的新生与死亡，帮你省去刷 100 个信息源的时间。本期：Mistral Forge、Karpathy AutoResearch、GPT-5.3 Instant。"
+publishedAt: 2026-03-19
+weekNumber: 1
+dateRange: "2026.03.14 — 03.19"
+highlights:
+  - Mistral Forge 企业自建 AI 模型平台发布
+  - Karpathy 开源 AutoResearch 自动化实验框架
+  - GPT-5.3 Instant 和 Gemini 3.1 Flash-Lite 发布
+---
+
+> 每周追踪 AI 工具圈的新生与死亡，帮你省去刷 100 个信息源的时间。
+
+---
+
+## 本周值得关注的 5 个新工具/更新
+
+### 1. Mistral Forge — 企业自建 AI 模型平台
+🔗 mistral.ai/forge
+📅 3 月 17 日发布
+
+Mistral 在 GTC 大会上发布了 Forge 平台，让企业基于私有数据训练定制化 AI 模型。直接对标 OpenAI 和 Anthropic 的企业方案，但卖点是「你的数据不离开你的服务器」。
+
+**谁应该关注：** 有自有数据资产的中大型企业、AI 基础设施团队
+**分类：** AI 基础设施 > 模型平台
+
+---
+
+### 2. Karpathy AutoResearch — 开源自动化 AI 实验框架
+🔗 github.com/karpathy/autoresearch
+📅 3 月 7 日开源
+
+前 OpenAI/Tesla AI 负责人 Karpathy 开源了 AutoResearch——630 行 Python 代码，让 AI Agent 在一张 GPU 上自动跑数百个实验，一夜跑完人类研究员几周的工作量。Fortune 称之为「Karpathy Loop」。
+
+**谁应该关注：** AI/ML 研究者、独立开发者、学生
+**分类：** 编程开发 > Agent 框架
+
+---
+
+### 3. GPT-5.3 Instant — OpenAI 对话模型更新
+📅 3 月 3 日发布
+
+OpenAI 发布 GPT-5.3 Instant，主打对话流畅度和回答相关性提升。ChatGPT 免费和 Plus 用户均可使用。
+
+**谁应该关注：** 所有 ChatGPT 用户
+**分类：** 办公效率 > 个人助理
+
+---
+
+### 4. Gemini 3.1 Flash-Lite — Google 最快的轻量模型
+📅 3 月 3 日发布
+
+Google 推出 Gemini 3 系列中最快、最便宜的模型。性能接近上一代 Pro 级别，但 API 调用成本大幅降低，适合需要高吞吐量的场景。
+
+**谁应该关注：** API 开发者、需要批量处理的应用
+**分类：** AI 基础设施 > API & 模型
+
+---
+
+### 5. Mistral Small 4 — 轻量但能打的本地模型
+📅 3 月 17 日同步发布
+
+和 Forge 一起发布的还有 Small 4 模型——参数量小但在 coding 和推理 benchmark 上打赢了不少大模型。支持本地部署，可以用 Ollama 跑。
+
+**谁应该关注：** 本地部署爱好者、隐私敏感用户
+**分类：** 编程开发 > API & 模型
+
+---
+
+## 本周关停/重大变更
+
+### Gemini 3.0 Pro Preview 正式下线
+📅 3 月 9 日生效
+
+Google 关停了 Gemini 3.0 Pro Preview，所有用户需迁移至 3.1 Pro Preview。Reddit 上有不少开发者反馈 3.1 存在性能退步，迁移并不平滑。
+
+**影响：** 使用 Gemini API 的开发者需要测试兼容性
+
+### GPT-5.1 已退役
+OpenAI 停止了 GPT-5.1 的服务。社区反响较大——不少用户认为 5.2 在某些场景（特别是非编码任务）不如 5.1。
+
+### PromptPerfect 宣布关停
+Jina AI 旗下的 Prompt 优化工具 PromptPerfect 宣布将于 2026 年 9 月关停。
+
+---
+
+## 本周数字
+
+- **166** — 2026 前 74 天发生的科技裁员事件数（AI 转型是主因之一）
+- **$90B** — Meta 2026 AI 投资预算（Avocado 模型延期至 5 月）
+- **700+** — Karpathy AutoResearch 在 2 天内自动完成的实验数量
+
+---
+
+## 编辑观点
+
+本周最值得关注的不是某个具体产品，而是一个趋势：**AI 工具从「人用工具」变成「工具用工具」**。Mistral Forge 让企业自建模型，Karpathy AutoResearch 让 AI 自己做实验——工具链在变深、变自动。
+
+对普通用户的启示：选 AI 工具不只看它现在能干嘛，还要看它的 **可组合性**——能不能和其他工具/API 串联。孤岛式工具正在被淘汰。
+
+---
+
+*发现了好用的新工具？回复告诉我们，下期可能收录！*

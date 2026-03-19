@@ -1,0 +1,111 @@
+---
+import { getCollection, render } from 'astro:content'
+import Layout from '../../layouts/Layout.astro'
+
+export async function getStaticPaths() {
+  const weekly = await getCollection('weekly')
+  return weekly.map((report) => ({
+    params: { slug: report.id },
+    props: { report },
+  }))
+}
+
+interface Props {
+  report: Awaited<ReturnType<typeof getCollection<'weekly'>>>[number]
+}
+
+const { report } = Astro.props
+const { Content, headings } = await render(report)
+
+// Build TOC from H2 headings
+const toc = headings.filter(h => h.depth === 2)
+
+const formattedDate = new Intl.DateTimeFormat('zh-CN', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+}).format(report.data.publishedAt)
+---
+
+<Layout title={report.data.title} description={report.data.description}>
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 flex text-sm text-gray-500">
+      <a href="/" class="hover:text-indigo-600">首页</a>
+      <span class="mx-2">/</span>
+      <a href="/weekly" class="hover:text-indigo-600">周报</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">#{report.data.weekNumber}</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-8">
+      <div class="inline-flex items-center gap-2 rounded-full bg-indigo-100 px-3 py-1 text-sm text-indigo-700 mb-4">
+        <span>📅</span>
+        <span>{report.data.dateRange}</span>
+      </div>
+      <h1 class="text-3xl font-bold text-gray-900 sm:text-4xl">
+        {report.data.title}
+      </h1>
+      <p class="mt-4 text-lg text-gray-600">
+        {report.data.description}
+      </p>
+      <time datetime={report.data.publishedAt.toISOString()} class="mt-4 block text-sm text-gray-500">
+        发布于 {formattedDate}
+      </time>
+    </header>
+
+    <!-- Highlights -->
+    {report.data.highlights.length > 0 && (
+      <div class="mb-8 rounded-lg bg-gradient-to-r from-indigo-50 to-purple-50 p-6">
+        <h2 class="text-sm font-semibold text-indigo-900 mb-3">本期亮点</h2>
+        <ul class="space-y-2">
+          {report.data.highlights.map((highlight: string) => (
+            <li class="flex items-start gap-2 text-gray-700">
+              <span class="text-indigo-500 mt-1">•</span>
+              <span>{highlight}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    <div class="lg:grid lg:grid-cols-[1fr_200px] lg:gap-8">
+      <!-- Main Content -->
+      <div class="min-w-0">
+        <div class="prose prose-gray max-w-none prose-headings:scroll-mt-20 prose-a:text-indigo-600 prose-a:no-underline hover:prose-a:underline prose-hr:my-8">
+          <Content />
+        </div>
+
+        <!-- Navigation -->
+        <div class="mt-12 flex items-center justify-between border-t border-gray-200 pt-8">
+          <a href="/weekly" class="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            所有周报
+          </a>
+        </div>
+      </div>
+
+      <!-- Sidebar TOC -->
+      {toc.length > 0 && (
+        <aside class="hidden lg:block">
+          <div class="sticky top-20">
+            <h3 class="mb-4 text-sm font-semibold text-gray-900">本期内容</h3>
+            <nav class="space-y-2 text-sm">
+              {toc.map((heading) => (
+                <a
+                  href={`#${heading.slug}`}
+                  class="block text-gray-600 hover:text-indigo-600 transition-colors"
+                >
+                  {heading.text}
+                </a>
+              ))}
+            </nav>
+          </div>
+        </aside>
+      )}
+    </div>
+  </article>
+</Layout>
