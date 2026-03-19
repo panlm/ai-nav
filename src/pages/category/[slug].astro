@@ -1,0 +1,127 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import ToolCard from '../../components/ToolCard.astro'
+import { categories, getToolsByCategory, getCategoryBySlug } from '../../lib/mock-data'
+
+export function getStaticPaths() {
+  return categories.map((cat) => ({
+    params: { slug: cat.slug },
+  }))
+}
+
+const { slug } = Astro.params
+const category = getCategoryBySlug(slug!)
+const categoryTools = getToolsByCategory(slug!)
+
+if (!category) {
+  return Astro.redirect('/404')
+}
+
+const pricingFilters = [
+  { value: 'all', label: '全部' },
+  { value: 'free', label: '免费' },
+  { value: 'freemium', label: '免费增值' },
+  { value: 'paid', label: '付费' },
+  { value: 'open_source', label: '开源' },
+]
+---
+
+<Layout title={`${category.name} — AI 工具`} description={`精选 ${category.name} 类 AI 工具，免费/付费/开源一网打尽。`}>
+  <!-- Breadcrumb -->
+  <div class="mx-auto max-w-7xl px-4 pt-6">
+    <nav class="flex text-sm text-gray-500">
+      <a href="/" class="hover:text-indigo-600">首页</a>
+      <span class="mx-2">/</span>
+      <a href="/category" class="hover:text-indigo-600">分类</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">{category.name}</span>
+    </nav>
+  </div>
+
+  <!-- Category Header -->
+  <section class="mx-auto max-w-7xl px-4 py-8">
+    <div class="flex items-center gap-3">
+      <span class="text-4xl">{category.icon}</span>
+      <div>
+        <h1 class="text-3xl font-bold text-gray-900">{category.name}</h1>
+        <p class="mt-1 text-gray-600">共 {categoryTools.length} 个工具</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="mx-auto max-w-7xl px-4 pb-4">
+    <div class="flex flex-wrap items-center gap-4">
+      <!-- Pricing Filter -->
+      <div class="flex items-center gap-2">
+        <span class="text-sm font-medium text-gray-700">价格:</span>
+        <div class="flex gap-1">
+          {pricingFilters.map((f) => (
+            <button
+              class={`rounded-full px-3 py-1 text-sm transition ${
+                f.value === 'all'
+                  ? 'bg-indigo-600 text-white'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              }`}
+            >
+              {f.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <!-- Platform Filter -->
+      <div class="flex items-center gap-2">
+        <span class="text-sm font-medium text-gray-700">平台:</span>
+        <div class="flex gap-1">
+          {['全部', 'Web', 'Mac', 'Windows', 'iOS', 'Android', 'API'].map((p, i) => (
+            <button
+              class={`rounded-full px-3 py-1 text-sm transition ${
+                i === 0
+                  ? 'bg-indigo-600 text-white'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              }`}
+            >
+              {p}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <!-- Sort -->
+      <div class="ml-auto flex items-center gap-2">
+        <span class="text-sm font-medium text-gray-700">排序:</span>
+        <select class="rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-sm focus:border-indigo-500 focus:outline-none">
+          <option>编辑推荐</option>
+          <option>最新上架</option>
+          <option>最高评分</option>
+          <option>最多收藏</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tool Grid -->
+  <section class="mx-auto max-w-7xl px-4 pb-16">
+    {categoryTools.length > 0 ? (
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {categoryTools.map((tool) => (
+          <ToolCard
+            name={tool.name}
+            description={tool.description}
+            url={`/tool/${tool.slug}`}
+            logoUrl={tool.logoUrl}
+            pricing={tool.pricing}
+            category={tool.category}
+            tags={tool.tags}
+          />
+        ))}
+      </div>
+    ) : (
+      <div class="py-16 text-center text-gray-500">
+        <p class="text-lg">暂无工具</p>
+        <p class="mt-2 text-sm">该分类还没有收录工具，敬请期待！</p>
+      </div>
+    )}
+  </section>
+</Layout>
