@@ -1,22 +1,9 @@
----
-title: "自媒体创作者的 AI 工具全栈方案"
-description: "从选题到复盘的完整 AI 内容创作工作流，$50/月搭建专业自媒体工具栈。"
-publishedAt: 2026-03-12
-category: productivity
-tags:
-  - 自媒体
-  - 内容创作
-  - 工具栈
-  - 工作流
-keywords:
-  - 自媒体AI工具
-  - 内容创作者工具推荐
-  - AI content creator tools
-relatedTools:
-  - chatgpt
-  - claude
-  - midjourney
-author: AI Nav 编辑部
+# 自媒体创作者的 AI 工具全栈方案
+
+> **目标关键词：** 自媒体AI工具、内容创作者工具推荐、AI content creator tools
+> **字数：** ~2000 字
+> **站内链接：** /tool/chatgpt, /tool/claude, /tool/midjourney, /tool/stable-diffusion
+
 ---
 
 自媒体创作者每天面对的核心矛盾：**平台要你日更，但好内容需要时间**。
@@ -150,3 +137,5 @@ AI 不是来替代你的创作力的——它是来帮你把 80% 的重复劳动
 ---
 
 *以上工具可在我们的 [写作工具](/category/text-writing)、[图像生成](/category/image-generation)、[视频工具](/category/video) 分类页找到详细对比。*
+
+*你的内容创作 AI 工作流是什么样的？评论区交流 ✍️*

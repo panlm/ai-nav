@@ -1,21 +1,9 @@
----
-title: "小红书运营 AI 工具包：从选题到爆款的完整方案"
-description: "小红书日更从 4 小时压缩到 1 小时的完整 AI 运营方案，选题、文案、封面一站搞定。"
-publishedAt: 2026-03-05
-category: marketing-seo
-tags:
-  - 小红书
-  - 社媒运营
-  - 内容创作
-  - AI文案
-keywords:
-  - 小红书AI工具
-  - 小红书运营工具推荐
-  - AI做小红书
-relatedTools:
-  - chatgpt
-  - midjourney
-author: AI Nav 编辑部
+# 小红书运营 AI 工具包：从选题到爆款的完整方案
+
+> **目标关键词：** 小红书AI工具、小红书运营工具推荐、AI做小红书
+> **字数：** ~1800 字
+> **站内链接：** /tool/chatgpt, /tool/midjourney, /tool/stable-diffusion
+
 ---
 
 小红书是最卷的内容平台——但也是最适合用 AI 提效的平台。
@@ -29,8 +17,8 @@ author: AI Nav 编辑部
 | 环节 | 工具 | 费用 | 用途 |
 |------|------|------|------|
 | 选题 | ChatGPT/Kimi | 免费 | 热点捕捉、选题生成 |
-| 文案 | 文心一言 + Claude | 免费/$20 | 笔记正文撰写 |
-| 封面 | Midjourney / Canva | $10/免费 | 高点击率封面图 |
+| 文案 | 文心一言 + Claude | 免费/\$20 | 笔记正文撰写 |
+| 封面 | Midjourney / Canva | \$10/免费 | 高点击率封面图 |
 | 数据 | 小红书创作者中心 | 免费 | 复盘分析 |
 | 排期 | 蒲公英/第三方 | 免费/付费 | 定时发布 |
 
@@ -158,7 +146,7 @@ minimal design, white background, trending on pinterest --ar 3:4
 | 9:45-9:50 | 添加标签、排期发布 | 小红书 App |
 | **共计** | **50 分钟/篇** | |
 
-## 避坑指南
+## ⚠️ 避坑指南
 
 1. **不要 100% 用 AI 写**——小红书算法已经能识别纯 AI 内容，限流概率高
 2. **一定要加个人经验**——哪怕只是一句「我试过 XX，真的有效」就能大幅提升真实感
@@ -168,3 +156,5 @@ minimal design, white background, trending on pinterest --ar 3:4
 ---
 
 *探索更多小红书运营 AI 工具：[图像生成工具](/category/image-generation) | [文本写作工具](/category/text-writing)*
+
+*你用 AI 做小红书踩过什么坑？评论区交流 📕*

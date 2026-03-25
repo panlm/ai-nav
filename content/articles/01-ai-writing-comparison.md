@@ -1,21 +1,9 @@
----
-title: "AI 写作工具横评：Claude vs ChatGPT vs Gemini vs 文心一言"
-description: "2026年四大AI写作工具深度对比测评，覆盖营销文案、博客长文、社媒内容等场景，帮你找到最适合的AI写作助手。"
-publishedAt: 2026-03-15
-category: text-writing
-tags:
-  - 工具对比
-  - AI写作
-  - 测评
-  - 文案
-keywords:
-  - AI写作工具对比
-  - Claude vs ChatGPT写作
-  - AI写作哪个好
-relatedTools:
-  - claude
-  - chatgpt
-author: AI Nav 编辑部
+# AI 写作工具横评：Claude vs ChatGPT vs Gemini vs 文心一言
+
+> **目标关键词：** AI写作工具对比、Claude vs ChatGPT写作、AI写作哪个好
+> **字数：** ~2200 字
+> **站内链接：** /tool/claude, /tool/chatgpt
+
 ---
 
 2026 年了，AI 写作工具多到让人选择困难。但你真正需要回答的问题只有一个：**写我这类内容，哪个最好用？**
@@ -45,7 +33,7 @@ author: AI Nav 编辑部
 
 ## 逐项对比
 
-### 1. 营销文案：Claude 胜出
+### 1. 营销文案：Claude 胜出 🏆
 
 **任务：** 为一款项目管理 SaaS 写落地页 Hero Section。
 
@@ -56,7 +44,7 @@ author: AI Nav 编辑部
 
 **结论：** 要品质选 Claude，要数量选 ChatGPT，要中文地道选文心一言。
 
-### 2. 博客长文：ChatGPT 胜出
+### 2. 博客长文：ChatGPT 胜出 🏆
 
 **任务：** 写一篇关于「远程团队效率提升」的 SEO 博客文章。
 
@@ -76,11 +64,11 @@ author: AI Nav 编辑部
 
 **结论：** 英文社媒选 Claude，中文小红书/抖音选文心一言。
 
-### 4. 邮件写作：ChatGPT 胜出
+### 4. 邮件写作：ChatGPT 胜出 🏆
 
 冷邮件需要精准、专业、不冒犯。ChatGPT 在商务邮件的语气把控上最稳定，Claude 偶尔过于亲切（cold email 不需要太亲切），文心一言的英文邮件还是有翻译腔。
 
-### 5. 改写润色：Claude 胜出
+### 5. 改写润色：Claude 胜出 🏆
 
 这是差距最大的一项。Claude 改写后的文字最接近真人写作风格，会主动打破 AI 写作的固定句式模式（比如避免「首先…其次…最后」三段式）。ChatGPT 改写后仍然能看出 AI 痕迹。
 
@@ -88,9 +76,9 @@ author: AI Nav 编辑部
 
 | 排名 | 工具 | 总分 | 最强场景 |
 |------|------|------|---------|
-| 1 | Claude | 8.6/10 | 文案、润色、创意写作 |
-| 2 | ChatGPT | 8.4/10 | 长文、邮件、SEO 内容 |
-| 3 | 文心一言 | 7.8/10 | 中文社媒、本土化内容 |
+| 🥇 | Claude | 8.6/10 | 文案、润色、创意写作 |
+| 🥈 | ChatGPT | 8.4/10 | 长文、邮件、SEO 内容 |
+| 🥉 | 文心一言 | 7.8/10 | 中文社媒、本土化内容 |
 | 4 | Gemini | 7.2/10 | 带引用的研究型内容 |
 
 ## 怎么选？看你的场景
@@ -108,3 +96,5 @@ author: AI Nav 编辑部
 ---
 
 *以上工具均可在我们的 [AI 写作工具分类页](/category/text-writing) 找到详细介绍和最新定价。*
+
+*你用哪个 AI 写作？评论区聊聊你的体验 👇*

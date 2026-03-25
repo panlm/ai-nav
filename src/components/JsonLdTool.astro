@@ -1,0 +1,99 @@
+---
+interface Props {
+  name: string
+  description: string
+  url: string
+  logoUrl?: string
+  pricingModel: string
+  categoryPrimary: string
+  editorScore?: number
+  platforms?: string[]
+}
+
+const { name, description, url, logoUrl, pricingModel, categoryPrimary, editorScore, platforms } = Astro.props
+
+// Map categoryPrimary to Schema.org applicationCategory
+const categoryMap: Record<string, string> = {
+  'text-writing': 'BusinessApplication',
+  'image-generation': 'MultimediaApplication',
+  'video': 'MultimediaApplication',
+  'audio-voice': 'MultimediaApplication',
+  'code-dev': 'DeveloperApplication',
+  'data-analytics': 'BusinessApplication',
+  'marketing-seo': 'BusinessApplication',
+  'customer-support': 'BusinessApplication',
+  'productivity': 'BusinessApplication',
+  'education': 'EducationalApplication',
+  'design-ui': 'DesignApplication',
+  'research': 'ReferenceApplication',
+}
+
+// Map pricingModel to offers
+function buildOffers(pricing: string) {
+  switch (pricing) {
+    case 'free':
+    case 'open-source':
+      return { '@type': 'Offer', price: '0', priceCurrency: 'USD' }
+    case 'freemium':
+      return { '@type': 'Offer', price: '0', priceCurrency: 'USD', description: '基础版免费，高级功能付费' }
+    case 'paid':
+      return { '@type': 'Offer', price: '0', priceCurrency: 'USD', description: '付费工具，具体价格请查看官网' }
+    case 'enterprise':
+      return { '@type': 'Offer', price: '0', priceCurrency: 'USD', description: '企业版定价，请联系销售' }
+    case 'contact-sales':
+      return { '@type': 'Offer', price: '0', priceCurrency: 'USD', description: '请联系销售获取报价' }
+    default:
+      return undefined
+  }
+}
+
+// Map platforms to operatingSystem
+const platformOsMap: Record<string, string> = {
+  'Web': 'Any',
+  'Mac': 'macOS',
+  'Win': 'Windows',
+  'Linux': 'Linux',
+  'iOS': 'iOS',
+  'Android': 'Android',
+  'API': 'Any',
+  'Chrome Extension': 'Any',
+  'wechat-mini': 'Any',
+}
+
+const jsonLd: Record<string, any> = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name,
+  description,
+  url,
+  applicationCategory: categoryMap[categoryPrimary] || 'WebApplication',
+}
+
+if (logoUrl) {
+  jsonLd.image = logoUrl
+}
+
+const offers = buildOffers(pricingModel)
+if (offers) {
+  jsonLd.offers = offers
+}
+
+if (editorScore !== undefined && editorScore > 0) {
+  jsonLd.aggregateRating = {
+    '@type': 'AggregateRating',
+    ratingValue: editorScore,
+    bestRating: 10,
+    worstRating: 0,
+    ratingCount: 1,
+  }
+}
+
+if (platforms && platforms.length > 0) {
+  jsonLd.operatingSystem = platforms
+    .map(p => platformOsMap[p] || p)
+    .filter((v, i, a) => a.indexOf(v) === i)
+    .join(', ')
+}
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

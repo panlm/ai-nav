@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import ToolCard from '../components/ToolCard.astro'
-import { categories, getFeaturedTools } from '../lib/mock-data'
+import { categories, getFeaturedTools } from '../lib/tools-data'
 
 const featured = getFeaturedTools()
 const activeCategories = categories.filter(c => c.toolCount > 0)
@@ -23,16 +23,17 @@ const activeCategories = categories.filter(c => c.toolCount > 0)
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
         </svg>
       </a>
-      <div class="relative w-full max-w-md sm:w-auto sm:flex-1 sm:max-w-sm">
+      <form action="/search" method="get" class="relative w-full max-w-md sm:w-auto sm:flex-1 sm:max-w-sm">
         <svg class="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
         <input
           type="text"
+          name="q"
           placeholder="或者直接搜索..."
           class="w-full rounded-xl border border-gray-300 py-3 pl-12 pr-4 shadow-sm transition focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
         />
-      </div>
+      </form>
     </div>
     <div class="mt-6 flex flex-wrap justify-center gap-2 text-sm text-gray-500">
       <span>热门场景:</span>

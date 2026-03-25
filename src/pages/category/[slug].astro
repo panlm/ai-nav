@@ -1,7 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro'
 import ToolCard from '../../components/ToolCard.astro'
-import { categories, getToolsByCategory, getCategoryBySlug } from '../../lib/mock-data'
+import JsonLdItemList from '../../components/JsonLdItemList.astro'
+import { categories, getToolsByCategory, getCategoryBySlug } from '../../lib/tools-data'
 
 export function getStaticPaths() {
   return categories.map((cat) => ({
@@ -35,6 +36,15 @@ const chineseFilters = [
 ---
 
 <Layout title={`${category.name} — AI 工具`} description={`精选 ${category.name} 类 AI 工具，免费/付费/开源一网打尽。`}>
+  <JsonLdItemList
+    name={`${category.name} — AI 工具`}
+    description={`精选 ${category.name} 类 AI 工具，免费/付费/开源一网打尽。`}
+    items={categoryTools.map((tool, index) => ({
+      name: tool.name,
+      url: `/tool/${tool.slug}`,
+      position: index + 1,
+    }))}
+  />
   <!-- Breadcrumb -->
   <div class="mx-auto max-w-7xl px-4 pt-6">
     <nav class="flex text-sm text-gray-500">
@@ -63,9 +73,12 @@ const chineseFilters = [
       <!-- Pricing -->
       <div class="flex items-center gap-2">
         <span class="text-sm font-medium text-gray-700">价格:</span>
-        <div class="flex gap-1">
+        <div id="pricing-filters" class="flex gap-1">
           {pricingFilters.map((f, i) => (
-            <button class={`rounded-full px-3 py-1 text-sm transition ${i === 0 ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}>
+            <button
+              data-filter-pricing={f.value}
+              class={`rounded-full px-3 py-1 text-sm transition cursor-pointer ${i === 0 ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+            >
               {f.label}
             </button>
           ))}
@@ -75,9 +88,12 @@ const chineseFilters = [
       <!-- Chinese Support -->
       <div class="flex items-center gap-2">
         <span class="text-sm font-medium text-gray-700">中文:</span>
-        <div class="flex gap-1">
+        <div id="chinese-filters" class="flex gap-1">
           {chineseFilters.map((f, i) => (
-            <button class={`rounded-full px-3 py-1 text-sm transition ${i === 0 ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}>
+            <button
+              data-filter-chinese={f.value}
+              class={`rounded-full px-3 py-1 text-sm transition cursor-pointer ${i === 0 ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+            >
               {f.label}
             </button>
           ))}
@@ -87,32 +103,44 @@ const chineseFilters = [
       <!-- Sort -->
       <div class="ml-auto flex items-center gap-2">
         <span class="text-sm font-medium text-gray-700">排序:</span>
-        <select class="rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-sm focus:border-indigo-500 focus:outline-none">
-          <option>编辑推荐</option>
-          <option>最新上架</option>
-          <option>最高评分</option>
-          <option>最多收藏</option>
+        <select id="sort-select" class="rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-sm focus:border-indigo-500 focus:outline-none">
+          <option value="score">编辑推荐</option>
+          <option value="name">按名称</option>
+          <option value="rating">最高评分</option>
         </select>
       </div>
     </div>
   </section>
 
+  <!-- Tool Count -->
+  <section class="mx-auto max-w-7xl px-4 pb-2">
+    <p id="filter-count" class="text-sm text-gray-500">共 {categoryTools.length} 个工具</p>
+  </section>
+
   <!-- Tool Grid -->
   <section class="mx-auto max-w-7xl px-4 pb-16">
     {categoryTools.length > 0 ? (
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div id="category-tool-grid" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {categoryTools.map((tool) => (
-          <ToolCard
-            name={tool.name}
-            descriptionShort={tool.descriptionShort}
-            url={`/tool/${tool.slug}`}
-            logoUrl={tool.logoUrl}
-            pricingModel={tool.pricingModel}
-            categoryPrimary={tool.categoryPrimary}
-            chineseSupport={tool.chineseSupport}
-            tags={tool.tags}
-            editorScore={tool.editorScore}
-          />
+          <div
+            class="tool-card-wrapper"
+            data-pricing={tool.pricingModel}
+            data-chinese={tool.chineseSupport}
+            data-score={tool.editorScore}
+            data-name={tool.name}
+          >
+            <ToolCard
+              name={tool.name}
+              descriptionShort={tool.descriptionShort}
+              url={`/tool/${tool.slug}`}
+              logoUrl={tool.logoUrl}
+              pricingModel={tool.pricingModel}
+              categoryPrimary={tool.categoryPrimary}
+              chineseSupport={tool.chineseSupport}
+              tags={tool.tags}
+              editorScore={tool.editorScore}
+            />
+          </div>
         ))}
       </div>
     ) : (
@@ -121,5 +149,91 @@ const chineseFilters = [
         <p class="mt-2 text-sm">该分类还没有收录工具，敬请期待！</p>
       </div>
     )}
+
+    <!-- Empty state for filters -->
+    <div id="filter-empty" class="hidden py-16 text-center text-gray-500">
+      <p class="text-lg">没有符合条件的工具</p>
+      <p class="mt-2 text-sm">试试调整筛选条件</p>
+    </div>
   </section>
+
+  <script>
+    // Category page filter logic
+    const grid = document.getElementById('category-tool-grid')
+    if (grid) {
+      const cards = grid.querySelectorAll<HTMLElement>('.tool-card-wrapper')
+      const filterCount = document.getElementById('filter-count')!
+      const filterEmpty = document.getElementById('filter-empty')!
+      const pricingBtns = document.querySelectorAll<HTMLButtonElement>('[data-filter-pricing]')
+      const chineseBtns = document.querySelectorAll<HTMLButtonElement>('[data-filter-chinese]')
+      const sortSelect = document.getElementById('sort-select') as HTMLSelectElement
+
+      let activePricing = 'all'
+      let activeChinese = 'all'
+
+      function setActiveBtn(buttons: NodeListOf<HTMLButtonElement>, activeValue: string) {
+        buttons.forEach(btn => {
+          const val = btn.dataset.filterPricing || btn.dataset.filterChinese
+          if (val === activeValue) {
+            btn.className = 'rounded-full px-3 py-1 text-sm transition cursor-pointer bg-indigo-600 text-white'
+          } else {
+            btn.className = 'rounded-full px-3 py-1 text-sm transition cursor-pointer bg-gray-100 text-gray-600 hover:bg-gray-200'
+          }
+        })
+      }
+
+      function applyFilters() {
+        let visibleCount = 0
+        cards.forEach(card => {
+          const matchPricing = activePricing === 'all' || card.dataset.pricing === activePricing
+          const matchChinese = activeChinese === 'all' || card.dataset.chinese === activeChinese
+          if (matchPricing && matchChinese) {
+            card.classList.remove('hidden')
+            visibleCount++
+          } else {
+            card.classList.add('hidden')
+          }
+        })
+        filterCount.textContent = `共 ${visibleCount} 个工具`
+        filterEmpty.classList.toggle('hidden', visibleCount > 0)
+        grid.classList.toggle('hidden', visibleCount === 0)
+      }
+
+      function applySort() {
+        const sortVal = sortSelect.value
+        const arr = Array.from(cards)
+        arr.sort((a, b) => {
+          if (sortVal === 'score') {
+            return parseFloat(b.dataset.score || '0') - parseFloat(a.dataset.score || '0')
+          } else if (sortVal === 'name') {
+            return (a.dataset.name || '').localeCompare(b.dataset.name || '')
+          } else if (sortVal === 'rating') {
+            return parseFloat(b.dataset.score || '0') - parseFloat(a.dataset.score || '0')
+          }
+          return 0
+        })
+        arr.forEach(card => grid.appendChild(card))
+      }
+
+      pricingBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          activePricing = btn.dataset.filterPricing!
+          setActiveBtn(pricingBtns, activePricing)
+          applyFilters()
+        })
+      })
+
+      chineseBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          activeChinese = btn.dataset.filterChinese!
+          setActiveBtn(chineseBtns, activeChinese)
+          applyFilters()
+        })
+      })
+
+      sortSelect.addEventListener('change', () => {
+        applySort()
+      })
+    }
+  </script>
 </Layout>
