@@ -1,7 +1,8 @@
 // Unified tool data layer — merges batch-1 JSON (rich, snake_case) with mock-data fallbacks
 // This replaces direct mock-data imports across the site.
 
-import batchRaw from '../../data/tools-batch-1.json'
+import batch1Raw from '../../data/tools-batch-1.json'
+import batch2Raw from '../../data/tools-batch-2.json'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -188,6 +189,57 @@ const chineseSupportMap: Record<string, ChineseSupport> = {
   'pictory': 'english-only',
   'zapier-ai': 'english-only',
   'adobe-firefly': 'supported',
+  // Batch 2
+  'suno-ai': 'supported',
+  'kling-ai': 'native',
+  'google-gemini': 'supported',
+  'kimi': 'native',
+  'tongyi-qianwen': 'native',
+  'wenxin-yiyan': 'native',
+  'zhipu-chatglm': 'native',
+  'gamma-ai': 'supported',
+  'stable-diffusion': 'supported',
+  'pika': 'english-only',
+  'notion-calendar': 'supported',
+  'manychat': 'english-only',
+  'ahrefs': 'english-only',
+  'luma-dream-machine': 'english-only',
+  'fliki': 'english-only',
+  'udio': 'english-only',
+  'n8n': 'supported',
+  'make': 'supported',
+  'midjourney-niji': 'supported',
+  'ideogram': 'english-only',
+  'hubspot-ai': 'english-only',
+  'manus-ai': 'native',
+  'bolt-new': 'english-only',
+  'v0': 'english-only',
+  'replit-ai': 'english-only',
+  'lovable': 'english-only',
+  'framer-ai': 'english-only',
+  'whimsical-ai': 'english-only',
+  'consensus': 'english-only',
+  'hypotenuse-ai': 'english-only',
+  'akkio': 'english-only',
+  'polymer': 'english-only',
+  'tome': 'english-only',
+  'lemon-squeezy': 'english-only',
+  'resume-io': 'supported',
+  'reclaim-ai': 'english-only',
+  'beautiful-ai': 'english-only',
+  'deepl': 'native',
+  'casetext': 'english-only',
+  'glass-health': 'english-only',
+  'invideo-ai': 'supported',
+  'lovo-ai': 'english-only',
+  'tldv': 'english-only',
+  'jasper-art': 'supported',
+  'phind': 'english-only',
+  'decagon': 'english-only',
+  'scholarcy': 'english-only',
+  'lexica': 'english-only',
+  'rezi': 'english-only',
+  'pi-ai': 'supported',
 }
 
 // ── Platform name normalization ─────────────────────────────────────────────
@@ -481,14 +533,31 @@ const mockOnlyTools: Tool[] = [
 
 // ── Build the unified tool list ──────────────────────────────────────────────
 
-const batchTools: Tool[] = (batchRaw as any[]).map(mapBatchTool)
+const batch1Tools: Tool[] = (batch1Raw as any[]).map(mapBatchTool)
+const batch2Tools: Tool[] = (batch2Raw as any[]).map(mapBatchTool)
 
-// Merge: batch 1 takes priority. For mock-only tools, add them after.
-const slugSet = new Set(batchTools.map(t => t.slug))
-const allTools: Tool[] = [
-  ...batchTools,
-  ...mockOnlyTools.filter(t => !slugSet.has(t.slug)),
-]
+// Merge: batch 1 first, then batch 2 (no overlap expected), then mock-only for anything still missing
+const slugSet = new Set<string>()
+const allTools: Tool[] = []
+
+for (const t of batch1Tools) {
+  if (!slugSet.has(t.slug)) {
+    slugSet.add(t.slug)
+    allTools.push(t)
+  }
+}
+for (const t of batch2Tools) {
+  if (!slugSet.has(t.slug)) {
+    slugSet.add(t.slug)
+    allTools.push(t)
+  }
+}
+for (const t of mockOnlyTools) {
+  if (!slugSet.has(t.slug)) {
+    slugSet.add(t.slug)
+    allTools.push(t)
+  }
+}
 
 // ── Build categories with real counts ───────────────────────────────────────
 
