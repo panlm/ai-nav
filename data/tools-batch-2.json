@@ -3792,5 +3792,176 @@
     "created_at": "2026-03-22T08:00:00Z",
     "updated_at": "2026-03-22T08:00:00Z",
     "description_full": "Pi 是 Inflection AI 推出的个人 AI 助手，与 ChatGPT 的定位不同——Pi 更注重情感交流和日常陪伴。对话风格温暖、有耐心，擅长倾听和引导思考。完全免费使用，支持语音对话。不是生产力工具，而是一种新形态的 AI 交互体验。"
+  },
+  {
+    "id": "b1b2c3d4-0051-4000-8000-000000000051",
+    "locale": "zh",
+    "name": "Claude Code",
+    "slug": "claude-code",
+    "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview",
+    "description_short": "Anthropic 官方 AI 编程 Agent，终端内自主编写、测试和提交代码",
+    "description_full": "Claude Code 是 Anthropic 推出的 agentic 编程工具，直接在终端中运行。基于 Claude Opus 4.6 模型，在 SWE-bench Verified 基准测试中达到 80.8% 的解决率，业界最高。能够自主理解代码库、编写代码、运行测试、处理 Git 操作。与传统 IDE 插件不同，Claude Code 是一个完整的编程 Agent，可以执行多步骤的复杂编程任务。Pragmatic Engineer 2026 调研显示 46% 开发者将其列为最爱工具。",
+    "category_primary": "code-dev",
+    "categories_secondary": [],
+    "tags": [
+      "AI编程",
+      "Agent",
+      "终端",
+      "Anthropic",
+      "Claude"
+    ],
+    "use_cases": [
+      "自主代码编写和测试",
+      "代码库理解和重构",
+      "Bug修复",
+      "Git操作自动化"
+    ],
+    "pricing_model": "paid",
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 20,
+      "plans": [
+        {
+          "name": "Claude Pro (含 Code)",
+          "price_monthly": 20,
+          "features": [
+            "Claude Opus 4.6",
+            "Extended thinking"
+          ]
+        }
+      ]
+    },
+    "platform": [
+      "mac",
+      "linux",
+      "windows"
+    ],
+    "api_available": true,
+    "open_source": false,
+    "model_base": [
+      "Claude Opus 4.6"
+    ],
+    "company": {
+      "name": "Anthropic",
+      "country": "US",
+      "founded_year": 2021,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.8,
+      "ease_of_use": 4.2,
+      "value_for_money": 4.5,
+      "output_quality": 4.9,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "开发工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 0,
+      "traffic_trend": "rising",
+      "data_source": "Bundled with Claude",
+      "updated_at": "2026-03"
+    },
+    "status": "published",
+    "featured": false,
+    "submitted_by": "editorial",
+    "created_at": "2026-03-26T08:00:00Z",
+    "updated_at": "2026-03-26T08:00:00Z"
+  },
+  {
+    "id": "b1b2c3d4-0052-4000-8000-000000000052",
+    "locale": "zh",
+    "name": "GPT-5.4 (ChatGPT)",
+    "slug": "gpt-5-4",
+    "url": "https://openai.com/index/gpt-5/",
+    "description_short": "OpenAI 最新旗舰模型，多模态推理和代码能力大幅提升",
+    "description_full": "GPT-5.4 是 OpenAI 于 2025 年底发布的最新旗舰模型，在推理、编程和多模态理解方面有重大突破。内置 Codex 编程 Agent，可以在沙盒环境中自主编写、运行和调试代码。在 SWE-bench Verified 上达到 72.1% 解决率。通过 ChatGPT Plus($20/月) 或 Pro($200/月) 订阅访问，API 也已开放。是 2026 年最强的通用 AI 模型之一。",
+    "category_primary": "code-dev",
+    "categories_secondary": [
+      "productivity",
+      "research"
+    ],
+    "tags": [
+      "AI编程",
+      "GPT-5",
+      "OpenAI",
+      "多模态",
+      "Agent"
+    ],
+    "use_cases": [
+      "AI辅助编程",
+      "复杂推理",
+      "数据分析",
+      "多模态理解"
+    ],
+    "pricing_model": "freemium",
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 20,
+      "free_tier_limits": "通过 ChatGPT Free 有限访问",
+      "plans": [
+        {
+          "name": "ChatGPT Plus",
+          "price_monthly": 20
+        },
+        {
+          "name": "ChatGPT Pro",
+          "price_monthly": 200
+        }
+      ]
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android",
+      "mac",
+      "api"
+    ],
+    "api_available": true,
+    "open_source": false,
+    "model_base": [
+      "GPT-5.4"
+    ],
+    "company": {
+      "name": "OpenAI",
+      "country": "US",
+      "founded_year": 2015,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.7,
+      "ease_of_use": 4.8,
+      "value_for_money": 4.2,
+      "output_quality": 4.7,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "开发工作流",
+      "研究工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 0,
+      "traffic_trend": "rising",
+      "data_source": "Bundled with ChatGPT",
+      "updated_at": "2026-03"
+    },
+    "status": "published",
+    "featured": false,
+    "submitted_by": "editorial",
+    "created_at": "2026-03-26T08:00:00Z",
+    "updated_at": "2026-03-26T08:00:00Z"
   }
 ]
