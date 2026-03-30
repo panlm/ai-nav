@@ -8,34 +8,103 @@
     "description_short": "企业级 AI 内容创作平台，支持品牌语调、团队协作和 SEO 优化",
     "description_full": "Jasper 是最早一批基于 GPT 构建的 AI 写作工具，支持 50+ 内容模板、品牌语调定制、Surfer SEO 集成。被 Dell、IBM 等企业采用。支持长文、广告文案、邮件、产品描述等多种内容类型。",
     "category_primary": "text-writing",
-    "categories_secondary": ["marketing-seo", "e-commerce"],
-    "tags": ["AI写作", "内容营销", "文案", "SEO", "企业级"],
-    "use_cases": ["营销文案自动生成", "SEO博客批量产出", "产品描述撰写", "邮件营销文案"],
+    "categories_secondary": [
+      "marketing-seo",
+      "e-commerce"
+    ],
+    "tags": [
+      "AI写作",
+      "内容营销",
+      "文案",
+      "SEO",
+      "企业级"
+    ],
+    "use_cases": [
+      "营销文案自动生成",
+      "SEO博客批量产出",
+      "产品描述撰写",
+      "邮件营销文案"
+    ],
     "pricing_model": "paid",
     "pricing_detail": {
       "currency": "USD",
-      "starting_price": 39,
+      "starting_price": 49,
       "plans": [
-        {"name": "Creator", "price_monthly": 39, "features": ["1 seat", "Brand voice", "SEO mode"]},
-        {"name": "Pro", "price_monthly": 59, "features": ["1 seat", "Team features", "Art generation"]},
-        {"name": "Business", "features": ["Custom pricing", "API access", "Advanced security"]}
+        {
+          "name": "Creator",
+          "price_monthly": 49,
+          "features": [
+            "1 seat",
+            "Brand voice",
+            "SEO mode"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price_monthly": 59,
+          "features": [
+            "1 seat",
+            "Team features",
+            "Art generation"
+          ]
+        },
+        {
+          "name": "Business",
+          "features": [
+            "Custom pricing",
+            "API access",
+            "Advanced security"
+          ]
+        }
       ]
     },
-    "platform": ["web", "chrome-extension", "api"],
+    "platform": [
+      "web",
+      "chrome-extension",
+      "api"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["GPT-4", "Anthropic Claude"],
-    "company": {"name": "Jasper AI Inc.", "country": "US", "founded_year": 2021, "funding_stage": "series-a"},
-    "ratings": {"overall": 4.3, "ease_of_use": 4.5, "value_for_money": 3.8, "output_quality": 4.2, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["内容营销工作流", "电商运营流"],
-    "affiliate": {"has_program": true, "commission_rate": "30% recurring", "cookie_days": 90},
-    "traffic_estimate": {"monthly_visits": 3500000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4",
+      "Anthropic Claude"
+    ],
+    "company": {
+      "name": "Jasper AI Inc.",
+      "country": "US",
+      "founded_year": 2021,
+      "funding_stage": "series-a"
+    },
+    "ratings": {
+      "overall": 4.3,
+      "ease_of_use": 4.5,
+      "value_for_money": 3.8,
+      "output_quality": 4.2,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "内容营销工作流",
+      "电商运营流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "30% recurring",
+      "cookie_days": 90
+    },
+    "traffic_estimate": {
+      "monthly_visits": 3500000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-22T08:00:00Z"
   },
   {
     "id": "a1b2c3d4-0002-4000-8000-000000000002",
@@ -45,26 +114,72 @@
     "url": "https://www.copy.ai",
     "description_short": "AI 驱动的 GTM 内容平台，擅长短文案和销售内容自动化",
     "category_primary": "text-writing",
-    "categories_secondary": ["marketing-seo"],
-    "tags": ["AI写作", "文案", "GTM", "销售"],
-    "use_cases": ["广告文案生成", "社交媒体帖子", "销售邮件", "产品描述"],
+    "categories_secondary": [
+      "marketing-seo"
+    ],
+    "tags": [
+      "AI写作",
+      "文案",
+      "GTM",
+      "销售"
+    ],
+    "use_cases": [
+      "广告文案生成",
+      "社交媒体帖子",
+      "销售邮件",
+      "产品描述"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 36, "free_tier_limits": "2000 words/month"},
-    "platform": ["web", "api"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 49,
+      "free_tier_limits": "2000 words/month"
+    },
+    "platform": [
+      "web",
+      "api"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["GPT-4"],
-    "company": {"name": "Copy.ai Inc.", "country": "US", "founded_year": 2020, "funding_stage": "series-a"},
-    "ratings": {"overall": 4.1, "ease_of_use": 4.4, "value_for_money": 4.0, "output_quality": 3.9, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["内容营销工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "45% first month", "cookie_days": 60},
-    "traffic_estimate": {"monthly_visits": 2000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4"
+    ],
+    "company": {
+      "name": "Copy.ai Inc.",
+      "country": "US",
+      "founded_year": 2020,
+      "funding_stage": "series-a"
+    },
+    "ratings": {
+      "overall": 4.1,
+      "ease_of_use": 4.4,
+      "value_for_money": 4.0,
+      "output_quality": 3.9,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "内容营销工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "45% first month",
+      "cookie_days": 60
+    },
+    "traffic_estimate": {
+      "monthly_visits": 2000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-22T08:00:00Z",
+    "description_full": "Copy.ai 是一个 AI 驱动的 GTM（Go-To-Market）内容平台，擅长生成短文案和销售内容。支持广告文案、社交媒体帖子、销售邮件和产品描述等多种内容类型。免费版每月 2000 字，Starter 版 $49/月。基于 GPT-4 模型，GTM 工作流自动化是其核心差异化——可以批量生成从获客到转化的全链路文案。"
   },
   {
     "id": "a1b2c3d4-0003-4000-8000-000000000003",
@@ -74,26 +189,72 @@
     "url": "https://writesonic.com",
     "description_short": "AI 写作 + SEO 内容生成平台，支持多语言和 AI 聊天",
     "category_primary": "text-writing",
-    "categories_secondary": ["marketing-seo"],
-    "tags": ["AI写作", "SEO", "多语言", "博客"],
-    "use_cases": ["SEO文章批量生成", "多语言内容创作", "登陆页文案"],
+    "categories_secondary": [
+      "marketing-seo"
+    ],
+    "tags": [
+      "AI写作",
+      "SEO",
+      "多语言",
+      "博客"
+    ],
+    "use_cases": [
+      "SEO文章批量生成",
+      "多语言内容创作",
+      "登陆页文案"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 16, "free_tier_limits": "10,000 words/month"},
-    "platform": ["web", "chrome-extension", "api"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 16,
+      "free_tier_limits": "10,000 words/month"
+    },
+    "platform": [
+      "web",
+      "chrome-extension",
+      "api"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["GPT-4"],
-    "company": {"name": "Writesonic Inc.", "country": "US", "founded_year": 2021, "funding_stage": "seed"},
-    "ratings": {"overall": 4.0, "ease_of_use": 4.3, "value_for_money": 4.2, "output_quality": 3.8, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["内容营销工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "30% lifetime recurring", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 1500000, "traffic_trend": "declining", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4"
+    ],
+    "company": {
+      "name": "Writesonic Inc.",
+      "country": "US",
+      "founded_year": 2021,
+      "funding_stage": "seed"
+    },
+    "ratings": {
+      "overall": 4.0,
+      "ease_of_use": 4.3,
+      "value_for_money": 4.2,
+      "output_quality": 3.8,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "内容营销工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "30% lifetime recurring",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 1500000,
+      "traffic_trend": "declining",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Writesonic 是一个 AI 写作和 SEO 内容生成平台，支持多语言输出。内置关键词优化功能，擅长批量生成 SEO 友好的博客文章。免费版每月 10,000 字，起步价仅 $16/月，是同类工具中最具性价比的选择。支持 AI 聊天和搜索功能，不过在品牌语调控制方面不如 Jasper。"
   },
   {
     "id": "a1b2c3d4-0004-4000-8000-000000000004",
@@ -103,30 +264,93 @@
     "url": "https://www.midjourney.com",
     "description_short": "顶级 AI 图像生成工具，以艺术感和电影级视觉效果著称",
     "category_primary": "image-generation",
-    "categories_secondary": ["design-ui"],
-    "tags": ["AI绘图", "图像生成", "艺术", "设计"],
-    "use_cases": ["概念艺术创作", "营销素材设计", "社交媒体配图", "品牌视觉探索"],
+    "categories_secondary": [
+      "design-ui"
+    ],
+    "tags": [
+      "AI绘图",
+      "图像生成",
+      "艺术",
+      "设计"
+    ],
+    "use_cases": [
+      "概念艺术创作",
+      "营销素材设计",
+      "社交媒体配图",
+      "品牌视觉探索"
+    ],
     "pricing_model": "paid",
-    "pricing_detail": {"currency": "USD", "starting_price": 10, "plans": [
-      {"name": "Basic", "price_monthly": 10, "features": ["~200 generations/month"]},
-      {"name": "Standard", "price_monthly": 30, "features": ["15h fast GPU"]},
-      {"name": "Pro", "price_monthly": 60, "features": ["30h fast GPU", "Stealth mode"]}
-    ]},
-    "platform": ["web"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 10,
+      "plans": [
+        {
+          "name": "Basic",
+          "price_monthly": 10,
+          "features": [
+            "~200 generations/month"
+          ]
+        },
+        {
+          "name": "Standard",
+          "price_monthly": 30,
+          "features": [
+            "15h fast GPU"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price_monthly": 60,
+          "features": [
+            "30h fast GPU",
+            "Stealth mode"
+          ]
+        }
+      ]
+    },
+    "platform": [
+      "web"
+    ],
     "api_available": false,
     "open_source": false,
-    "model_base": ["Midjourney v7"],
-    "company": {"name": "Midjourney Inc.", "country": "US", "founded_year": 2022, "funding_stage": "bootstrapped"},
-    "ratings": {"overall": 4.7, "ease_of_use": 3.8, "value_for_money": 4.5, "output_quality": 4.9, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["自媒体工作流", "设计工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 50000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Midjourney v7"
+    ],
+    "company": {
+      "name": "Midjourney Inc.",
+      "country": "US",
+      "founded_year": 2022,
+      "funding_stage": "bootstrapped"
+    },
+    "ratings": {
+      "overall": 4.7,
+      "ease_of_use": 3.8,
+      "value_for_money": 4.5,
+      "output_quality": 4.9,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "自媒体工作流",
+      "设计工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 50000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Midjourney 是目前最受欢迎的 AI 图像生成工具之一，以艺术感和电影级视觉效果著称。v7 模型在画面质量、一致性和细节表现上达到行业最高水平。通过 Web 界面使用，支持 Basic($10/月)到 Pro($60/月)多个套餐。Bootstrapped 运营，不依赖外部融资。在概念艺术、营销素材和创意设计领域有大量专业用户。"
   },
   {
     "id": "a1b2c3d4-0005-4000-8000-000000000005",
@@ -137,25 +361,68 @@
     "description_short": "OpenAI 的 AI 图像生成模型，以精确遵循提示词著称",
     "category_primary": "image-generation",
     "categories_secondary": [],
-    "tags": ["AI绘图", "图像生成", "OpenAI", "ChatGPT"],
-    "use_cases": ["按描述精确生图", "文字海报生成", "产品概念图", "教育插图"],
+    "tags": [
+      "AI绘图",
+      "图像生成",
+      "OpenAI",
+      "ChatGPT"
+    ],
+    "use_cases": [
+      "按描述精确生图",
+      "文字海报生成",
+      "产品概念图",
+      "教育插图"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 20, "free_tier_limits": "通过 ChatGPT Free 有限额度"},
-    "platform": ["web", "api"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 20,
+      "free_tier_limits": "通过 ChatGPT Free 有限额度"
+    },
+    "platform": [
+      "web",
+      "api"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["DALL-E 3"],
-    "company": {"name": "OpenAI", "country": "US", "founded_year": 2015, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.4, "ease_of_use": 4.8, "value_for_money": 4.0, "output_quality": 4.5, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["自媒体工作流", "内容营销工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 0, "traffic_trend": "stable", "data_source": "Bundled with ChatGPT", "updated_at": "2026-03"},
+    "model_base": [
+      "DALL-E 3"
+    ],
+    "company": {
+      "name": "OpenAI",
+      "country": "US",
+      "founded_year": 2015,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.4,
+      "ease_of_use": 4.8,
+      "value_for_money": 4.0,
+      "output_quality": 4.5,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "自媒体工作流",
+      "内容营销工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 0,
+      "traffic_trend": "stable",
+      "data_source": "Bundled with ChatGPT",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "DALL-E 3 是 OpenAI 的 AI 图像生成模型，集成在 ChatGPT 中。以精确遵循提示词著称——你描述什么，它就画什么，理解力在同类工具中最强。通过 ChatGPT Plus($20/月)使用，免费版也有有限额度。特别擅长文字海报、精确场景和教育插图。API 也已开放，支持开发者集成。"
   },
   {
     "id": "a1b2c3d4-0006-4000-8000-000000000006",
@@ -165,26 +432,74 @@
     "url": "https://leonardo.ai",
     "description_short": "AI 图像生成平台，擅长游戏资产和角色设计，有免费额度",
     "category_primary": "image-generation",
-    "categories_secondary": ["design-ui"],
-    "tags": ["AI绘图", "游戏资产", "角色设计", "免费"],
-    "use_cases": ["游戏美术资产生成", "角色概念设计", "纹理贴图生成"],
+    "categories_secondary": [
+      "design-ui"
+    ],
+    "tags": [
+      "AI绘图",
+      "游戏资产",
+      "角色设计",
+      "免费"
+    ],
+    "use_cases": [
+      "游戏美术资产生成",
+      "角色概念设计",
+      "纹理贴图生成"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 12, "free_tier_limits": "150 tokens/day"},
-    "platform": ["web", "api", "ios", "android"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 12,
+      "free_tier_limits": "150 tokens/day"
+    },
+    "platform": [
+      "web",
+      "api",
+      "ios",
+      "android"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Stable Diffusion", "Leonardo proprietary"],
-    "company": {"name": "Leonardo.ai", "country": "AU", "founded_year": 2022, "funding_stage": "series-a"},
-    "ratings": {"overall": 4.3, "ease_of_use": 4.2, "value_for_money": 4.5, "output_quality": 4.3, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["设计工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "20%", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 15000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Stable Diffusion",
+      "Leonardo proprietary"
+    ],
+    "company": {
+      "name": "Leonardo.ai",
+      "country": "AU",
+      "founded_year": 2022,
+      "funding_stage": "series-a"
+    },
+    "ratings": {
+      "overall": 4.3,
+      "ease_of_use": 4.2,
+      "value_for_money": 4.5,
+      "output_quality": 4.3,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "设计工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "20%",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 15000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Leonardo.ai 是一个 AI 图像生成平台，特别擅长游戏资产和角色设计。提供免费的每日 150 tokens，付费版 $12/月起。内置多种模型（包括自研模型和 Stable Diffusion），支持 LoRA 训练定制风格。有 iOS 和 Android 应用。来自澳大利亚，Series A 融资后增长迅速。"
   },
   {
     "id": "a1b2c3d4-0007-4000-8000-000000000007",
@@ -194,26 +509,74 @@
     "url": "https://runwayml.com",
     "description_short": "AI 视频生成和编辑平台，Gen-4.5 模型效果业界领先",
     "category_primary": "video",
-    "categories_secondary": ["design-ui"],
-    "tags": ["AI视频", "视频生成", "视频编辑", "Gen-4"],
-    "use_cases": ["文字/图片转视频", "视频特效添加", "背景移除替换", "创意短片制作"],
+    "categories_secondary": [
+      "design-ui"
+    ],
+    "tags": [
+      "AI视频",
+      "视频生成",
+      "视频编辑",
+      "Gen-4"
+    ],
+    "use_cases": [
+      "文字/图片转视频",
+      "视频特效添加",
+      "背景移除替换",
+      "创意短片制作"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 12, "free_tier_limits": "125 credits"},
-    "platform": ["web", "api", "ios"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 12,
+      "free_tier_limits": "125 credits"
+    },
+    "platform": [
+      "web",
+      "api",
+      "ios"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Gen-4.5"],
-    "company": {"name": "Runway AI Inc.", "country": "US", "founded_year": 2018, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.5, "ease_of_use": 4.0, "value_for_money": 3.7, "output_quality": 4.8, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["自媒体工作流", "短视频工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "20%", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 8000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Gen-4.5"
+    ],
+    "company": {
+      "name": "Runway AI Inc.",
+      "country": "US",
+      "founded_year": 2018,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.5,
+      "ease_of_use": 4.0,
+      "value_for_money": 3.7,
+      "output_quality": 4.8,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "自媒体工作流",
+      "短视频工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "20%",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 8000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Runway 是 AI 视频生成和编辑领域的标杆工具。Gen-4.5 模型在画质和动态一致性方面业界领先。不只能生成视频，还提供专业的视频编辑功能（背景移除、绿幕、修复等）。免费版 125 credits，Standard 版 $12/月起。API 可集成到专业工作流中。Series C+ 融资，被视频创作者和广告团队广泛使用。"
   },
   {
     "id": "a1b2c3d4-0008-4000-8000-000000000008",
@@ -223,30 +586,96 @@
     "url": "https://www.synthesia.io",
     "description_short": "AI 数字人视频平台，无需摄像头即可制作专业培训和营销视频",
     "category_primary": "video",
-    "categories_secondary": ["education"],
-    "tags": ["AI视频", "数字人", "培训视频", "多语言"],
-    "use_cases": ["企业培训视频制作", "多语言营销视频", "产品介绍视频", "内部沟通视频"],
+    "categories_secondary": [
+      "education"
+    ],
+    "tags": [
+      "AI视频",
+      "数字人",
+      "培训视频",
+      "多语言"
+    ],
+    "use_cases": [
+      "企业培训视频制作",
+      "多语言营销视频",
+      "产品介绍视频",
+      "内部沟通视频"
+    ],
     "pricing_model": "paid",
-    "pricing_detail": {"currency": "USD", "starting_price": 18, "plans": [
-      {"name": "Starter", "price_monthly": 18, "features": ["3 videos/month", "70+ avatars"]},
-      {"name": "Creator", "price_monthly": 64, "features": ["Unlimited videos", "Personal avatar"]},
-      {"name": "Enterprise", "features": ["Custom pricing", "ISO certified"]}
-    ]},
-    "platform": ["web", "api"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 18,
+      "plans": [
+        {
+          "name": "Starter",
+          "price_monthly": 18,
+          "features": [
+            "3 videos/month",
+            "70+ avatars"
+          ]
+        },
+        {
+          "name": "Creator",
+          "price_monthly": 64,
+          "features": [
+            "Unlimited videos",
+            "Personal avatar"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "features": [
+            "Custom pricing",
+            "ISO certified"
+          ]
+        }
+      ]
+    },
+    "platform": [
+      "web",
+      "api"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Synthesia proprietary"],
-    "company": {"name": "Synthesia Ltd.", "country": "UK", "founded_year": 2017, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.4, "ease_of_use": 4.6, "value_for_money": 3.9, "output_quality": 4.3, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["企业培训工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "20% recurring 12 months", "cookie_days": 60},
-    "traffic_estimate": {"monthly_visits": 5000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Synthesia proprietary"
+    ],
+    "company": {
+      "name": "Synthesia Ltd.",
+      "country": "UK",
+      "founded_year": 2017,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.4,
+      "ease_of_use": 4.6,
+      "value_for_money": 3.9,
+      "output_quality": 4.3,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "企业培训工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "20% recurring 12 months",
+      "cookie_days": 60
+    },
+    "traffic_estimate": {
+      "monthly_visits": 5000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Synthesia 是企业培训和营销视频的首选 AI 平台。提供 70+ 预设 AI 数字人头像，支持 140+ 语言和口音，无需真人出镜即可制作专业视频。ISO 27001 认证，满足企业安全合规要求。Starter 版 $18/月，Creator 版 $64/月支持无限视频。可创建个人数字分身（Personal Avatar）。"
   },
   {
     "id": "a1b2c3d4-0009-4000-8000-000000000009",
@@ -256,26 +685,74 @@
     "url": "https://www.heygen.com",
     "description_short": "AI 数字人视频和声音克隆平台，支持 40+ 语言翻译",
     "category_primary": "video",
-    "categories_secondary": ["audio-voice"],
-    "tags": ["AI视频", "数字人", "声音克隆", "视频翻译", "中文友好"],
-    "use_cases": ["短视频配音和翻译", "数字人带货视频", "多语言营销", "个人IP视频批量生产"],
+    "categories_secondary": [
+      "audio-voice"
+    ],
+    "tags": [
+      "AI视频",
+      "数字人",
+      "声音克隆",
+      "视频翻译",
+      "中文友好"
+    ],
+    "use_cases": [
+      "短视频配音和翻译",
+      "数字人带货视频",
+      "多语言营销",
+      "个人IP视频批量生产"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 24, "free_tier_limits": "1 free video"},
-    "platform": ["web", "api"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 24,
+      "free_tier_limits": "1 free video"
+    },
+    "platform": [
+      "web",
+      "api"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["HeyGen proprietary"],
-    "company": {"name": "HeyGen Inc.", "country": "US", "founded_year": 2020, "funding_stage": "series-a"},
-    "ratings": {"overall": 4.3, "ease_of_use": 4.5, "value_for_money": 4.0, "output_quality": 4.4, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["短视频工作流", "电商运营流"],
-    "affiliate": {"has_program": true, "commission_rate": "20% recurring", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 10000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "HeyGen proprietary"
+    ],
+    "company": {
+      "name": "HeyGen Inc.",
+      "country": "US",
+      "founded_year": 2020,
+      "funding_stage": "series-a"
+    },
+    "ratings": {
+      "overall": 4.3,
+      "ease_of_use": 4.5,
+      "value_for_money": 4.0,
+      "output_quality": 4.4,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "短视频工作流",
+      "电商运营流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "20% recurring",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 10000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "HeyGen 是短视频和多语言内容的最佳 AI 视频工具。核心特色包括声音克隆和视频翻译（40+ 语言，口型同步）。中文支持极好，界面和功能都针对中文优化。Creator 版 $24/月，Business 版 $60/月。特别适合跨境电商、短视频创作者和内容本地化团队。数字人质量高，表情和口型自然。"
   },
   {
     "id": "a1b2c3d4-0010-4000-8000-000000000010",
@@ -286,29 +763,101 @@
     "description_short": "业界最逼真的 AI 语音合成和声音克隆平台",
     "category_primary": "audio-voice",
     "categories_secondary": [],
-    "tags": ["AI语音", "TTS", "声音克隆", "配音", "有声书"],
-    "use_cases": ["短视频配音", "有声书制作", "播客生产", "游戏角色配音", "多语言语音合成"],
+    "tags": [
+      "AI语音",
+      "TTS",
+      "声音克隆",
+      "配音",
+      "有声书"
+    ],
+    "use_cases": [
+      "短视频配音",
+      "有声书制作",
+      "播客生产",
+      "游戏角色配音",
+      "多语言语音合成"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 5, "free_tier_limits": "10,000 characters/month", "plans": [
-      {"name": "Starter", "price_monthly": 5, "features": ["30,000 chars", "10 voice clones"]},
-      {"name": "Creator", "price_monthly": 22, "features": ["100,000 chars", "Voice cloning"]},
-      {"name": "Pro", "price_monthly": 99, "features": ["500,000 chars", "44 languages"]}
-    ]},
-    "platform": ["web", "api", "ios", "android"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 5,
+      "free_tier_limits": "10,000 characters/month",
+      "plans": [
+        {
+          "name": "Starter",
+          "price_monthly": 5,
+          "features": [
+            "30,000 chars",
+            "10 voice clones"
+          ]
+        },
+        {
+          "name": "Creator",
+          "price_monthly": 11,
+          "features": [
+            "100,000 chars",
+            "Voice cloning"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price_monthly": 99,
+          "features": [
+            "500,000 chars",
+            "44 languages"
+          ]
+        }
+      ]
+    },
+    "platform": [
+      "web",
+      "api",
+      "ios",
+      "android"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["ElevenLabs proprietary"],
-    "company": {"name": "ElevenLabs Inc.", "country": "US", "founded_year": 2022, "funding_stage": "series-b"},
-    "ratings": {"overall": 4.7, "ease_of_use": 4.5, "value_for_money": 4.3, "output_quality": 4.9, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["自媒体工作流", "播客工作流", "短视频工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "22% recurring", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 20000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "ElevenLabs proprietary"
+    ],
+    "company": {
+      "name": "ElevenLabs Inc.",
+      "country": "US",
+      "founded_year": 2022,
+      "funding_stage": "series-b"
+    },
+    "ratings": {
+      "overall": 4.7,
+      "ease_of_use": 4.5,
+      "value_for_money": 4.3,
+      "output_quality": 4.9,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "自媒体工作流",
+      "播客工作流",
+      "短视频工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "22% recurring",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 20000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-22T08:00:00Z",
+    "description_full": "ElevenLabs 是业界最逼真的 AI 语音合成和声音克隆平台。支持 44 种语言，声音克隆功能仅需几秒音频样本。Starter 版仅 $5/月（30,000 字符），Creator 版 $11/月（最近降价），Pro 版 $99/月。在有声书制作、短视频配音、播客和游戏配音领域广泛使用。API 支持实时语音合成。Series B 融资。"
   },
   {
     "id": "a1b2c3d4-0011-4000-8000-000000000011",
@@ -319,25 +868,68 @@
     "description_short": "企业级 AI 配音平台，120+ 逼真语音，支持中文",
     "category_primary": "audio-voice",
     "categories_secondary": [],
-    "tags": ["AI配音", "TTS", "企业", "中文友好"],
-    "use_cases": ["企业培训配音", "广告配音", "产品演示旁白"],
+    "tags": [
+      "AI配音",
+      "TTS",
+      "企业",
+      "中文友好"
+    ],
+    "use_cases": [
+      "企业培训配音",
+      "广告配音",
+      "产品演示旁白"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 19, "free_tier_limits": "10 min generation"},
-    "platform": ["web", "api"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 19,
+      "free_tier_limits": "10 min generation"
+    },
+    "platform": [
+      "web",
+      "api"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Murf proprietary"],
-    "company": {"name": "Murf Inc.", "country": "US", "founded_year": 2020, "funding_stage": "seed"},
-    "ratings": {"overall": 4.1, "ease_of_use": 4.4, "value_for_money": 3.8, "output_quality": 4.0, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["企业培训工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "20%", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 1500000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Murf proprietary"
+    ],
+    "company": {
+      "name": "Murf Inc.",
+      "country": "US",
+      "founded_year": 2020,
+      "funding_stage": "seed"
+    },
+    "ratings": {
+      "overall": 4.1,
+      "ease_of_use": 4.4,
+      "value_for_money": 3.8,
+      "output_quality": 4.0,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "企业培训工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "20%",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 1500000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Murf AI 是一个企业级 AI 配音平台，提供 120+ 逼真语音角色，支持中文等多种语言。免费版提供 10 分钟生成额度，付费版 $19/月起。特别适合企业培训配音、广告配音和产品演示旁白。与 ElevenLabs 相比定位更偏企业市场，语音选择丰富度高。"
   },
   {
     "id": "a1b2c3d4-0012-4000-8000-000000000012",
@@ -347,26 +939,74 @@
     "url": "https://www.descript.com",
     "description_short": "AI 驱动的音视频编辑器，像编辑文档一样编辑视频",
     "category_primary": "audio-voice",
-    "categories_secondary": ["video"],
-    "tags": ["视频编辑", "播客", "转录", "AI剪辑"],
-    "use_cases": ["播客编辑和转录", "视频字幕生成", "AI去除口头禅", "视频多轨编辑"],
+    "categories_secondary": [
+      "video"
+    ],
+    "tags": [
+      "视频编辑",
+      "播客",
+      "转录",
+      "AI剪辑"
+    ],
+    "use_cases": [
+      "播客编辑和转录",
+      "视频字幕生成",
+      "AI去除口头禅",
+      "视频多轨编辑"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 24, "free_tier_limits": "1h transcription"},
-    "platform": ["web", "mac", "windows"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 24,
+      "free_tier_limits": "1h transcription"
+    },
+    "platform": [
+      "web",
+      "mac",
+      "windows"
+    ],
     "api_available": false,
     "open_source": false,
-    "model_base": ["Descript proprietary"],
-    "company": {"name": "Descript Inc.", "country": "US", "founded_year": 2017, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.4, "ease_of_use": 4.6, "value_for_money": 4.1, "output_quality": 4.3, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["播客工作流", "自媒体工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "15%", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 4000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Descript proprietary"
+    ],
+    "company": {
+      "name": "Descript Inc.",
+      "country": "US",
+      "founded_year": 2017,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.4,
+      "ease_of_use": 4.6,
+      "value_for_money": 4.1,
+      "output_quality": 4.3,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "播客工作流",
+      "自媒体工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "15%",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 4000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Descript 是一款革命性的音视频编辑器——像编辑文档一样编辑视频。自动转录后，删除文字就删除对应视频片段。AI 功能包括去除口头禅、多轨编辑和声音克隆。免费版 1 小时转录，付费版 $24/月起。支持 Mac 和 Windows。在播客和视频创作者社区非常流行。Series C+ 融资。"
   },
   {
     "id": "a1b2c3d4-0013-4000-8000-000000000013",
@@ -376,30 +1016,87 @@
     "url": "https://github.com/features/copilot",
     "description_short": "GitHub 官方 AI 编程助手，实时代码补全和生成",
     "category_primary": "code-dev",
-    "categories_secondary": ["productivity"],
-    "tags": ["AI编程", "代码补全", "开发工具", "GitHub"],
-    "use_cases": ["实时代码补全", "单元测试生成", "代码重构建议", "文档注释生成"],
+    "categories_secondary": [
+      "productivity"
+    ],
+    "tags": [
+      "AI编程",
+      "代码补全",
+      "开发工具",
+      "GitHub"
+    ],
+    "use_cases": [
+      "实时代码补全",
+      "单元测试生成",
+      "代码重构建议",
+      "文档注释生成"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 10, "free_tier_limits": "学生/开源免费", "plans": [
-      {"name": "Individual", "price_monthly": 10},
-      {"name": "Business", "price_monthly": 19},
-      {"name": "Enterprise", "price_monthly": 39}
-    ]},
-    "platform": ["web", "mac", "windows", "linux"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 10,
+      "free_tier_limits": "学生/开源免费",
+      "plans": [
+        {
+          "name": "Individual",
+          "price_monthly": 10
+        },
+        {
+          "name": "Business",
+          "price_monthly": 19
+        },
+        {
+          "name": "Enterprise",
+          "price_monthly": 39
+        }
+      ]
+    },
+    "platform": [
+      "web",
+      "mac",
+      "windows",
+      "linux"
+    ],
     "api_available": false,
     "open_source": false,
-    "model_base": ["GPT-4", "Codex"],
-    "company": {"name": "GitHub (Microsoft)", "country": "US", "founded_year": 2008, "funding_stage": "public"},
-    "ratings": {"overall": 4.4, "ease_of_use": 4.5, "value_for_money": 4.2, "output_quality": 4.3, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["开发工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 0, "traffic_trend": "rising", "data_source": "Bundled with GitHub", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4",
+      "Codex"
+    ],
+    "company": {
+      "name": "GitHub (Microsoft)",
+      "country": "US",
+      "founded_year": 2008,
+      "funding_stage": "public"
+    },
+    "ratings": {
+      "overall": 4.4,
+      "ease_of_use": 4.5,
+      "value_for_money": 4.2,
+      "output_quality": 4.3,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "开发工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 0,
+      "traffic_trend": "rising",
+      "data_source": "Bundled with GitHub",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "GitHub Copilot 是 GitHub 官方的 AI 编程助手，基于 GPT-4 和 Codex 模型。提供实时代码补全、单元测试生成、代码重构建议和文档注释生成。Individual 版 $10/月，Business 版 $19/月，Enterprise 版 $39/月。学生和开源贡献者免费。支持所有主流 IDE（VS Code、JetBrains、Neovim 等）。"
   },
   {
     "id": "a1b2c3d4-0014-4000-8000-000000000014",
@@ -410,25 +1107,69 @@
     "description_short": "AI 原生代码编辑器，基于 VS Code，内置对话式编程",
     "category_primary": "code-dev",
     "categories_secondary": [],
-    "tags": ["AI编程", "IDE", "代码编辑器", "VS Code"],
-    "use_cases": ["AI辅助编程", "代码库理解和导航", "自然语言转代码", "代码审查"],
+    "tags": [
+      "AI编程",
+      "IDE",
+      "代码编辑器",
+      "VS Code"
+    ],
+    "use_cases": [
+      "AI辅助编程",
+      "代码库理解和导航",
+      "自然语言转代码",
+      "代码审查"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 20, "free_tier_limits": "2000 completions/month"},
-    "platform": ["mac", "windows", "linux"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 20,
+      "free_tier_limits": "2000 completions/month"
+    },
+    "platform": [
+      "mac",
+      "windows",
+      "linux"
+    ],
     "api_available": false,
     "open_source": false,
-    "model_base": ["GPT-4", "Claude"],
-    "company": {"name": "Anysphere Inc.", "country": "US", "founded_year": 2022, "funding_stage": "series-b"},
-    "ratings": {"overall": 4.6, "ease_of_use": 4.3, "value_for_money": 4.4, "output_quality": 4.7, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["开发工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 12000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4",
+      "Claude"
+    ],
+    "company": {
+      "name": "Anysphere Inc.",
+      "country": "US",
+      "founded_year": 2022,
+      "funding_stage": "series-b"
+    },
+    "ratings": {
+      "overall": 4.6,
+      "ease_of_use": 4.3,
+      "value_for_money": 4.4,
+      "output_quality": 4.7,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "开发工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 12000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Cursor 是一款 AI 原生代码编辑器，基于 VS Code 架构但完全重新设计了 AI 交互体验。内置对话式编程，可以理解整个代码库并提供上下文感知的代码建议。免费版每月 2000 次补全，Pro 版 $20/月。基于 GPT-4 和 Claude 模型。在开发者社区增长极快，被视为下一代 IDE 的代表。Series B 融资。"
   },
   {
     "id": "a1b2c3d4-0015-4000-8000-000000000015",
@@ -439,25 +1180,69 @@
     "description_short": "注重隐私的 AI 代码补全工具，支持本地部署",
     "category_primary": "code-dev",
     "categories_secondary": [],
-    "tags": ["AI编程", "代码补全", "隐私", "本地部署"],
-    "use_cases": ["私有代码库AI辅助", "企业合规编程", "多IDE代码补全"],
+    "tags": [
+      "AI编程",
+      "代码补全",
+      "隐私",
+      "本地部署"
+    ],
+    "use_cases": [
+      "私有代码库AI辅助",
+      "企业合规编程",
+      "多IDE代码补全"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 12, "free_tier_limits": "基础补全"},
-    "platform": ["mac", "windows", "linux"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 12,
+      "free_tier_limits": "基础补全"
+    },
+    "platform": [
+      "mac",
+      "windows",
+      "linux"
+    ],
     "api_available": false,
     "open_source": false,
-    "model_base": ["Tabnine proprietary"],
-    "company": {"name": "Tabnine Ltd.", "country": "IL", "founded_year": 2018, "funding_stage": "series-b"},
-    "ratings": {"overall": 4.0, "ease_of_use": 4.3, "value_for_money": 3.9, "output_quality": 3.8, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["开发工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "20%", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 1000000, "traffic_trend": "declining", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Tabnine proprietary"
+    ],
+    "company": {
+      "name": "Tabnine Ltd.",
+      "country": "IL",
+      "founded_year": 2018,
+      "funding_stage": "series-b"
+    },
+    "ratings": {
+      "overall": 4.0,
+      "ease_of_use": 4.3,
+      "value_for_money": 3.9,
+      "output_quality": 3.8,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "开发工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "20%",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 1000000,
+      "traffic_trend": "declining",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Tabnine 是一款注重隐私的 AI 代码补全工具，支持本地部署。与 GitHub Copilot 不同，Tabnine 的模型可以在企业内网运行，代码不出内网。免费版提供基础补全，Pro 版 $12/月。支持所有主流 IDE。特别适合有严格数据合规要求的企业（金融、医疗、政府等）。来自以色列，Series B 融资。"
   },
   {
     "id": "a1b2c3d4-0016-4000-8000-000000000016",
@@ -467,26 +1252,69 @@
     "url": "https://julius.ai",
     "description_short": "对话式 AI 数据分析工具，上传数据即可对话式分析和可视化",
     "category_primary": "data-analytics",
-    "categories_secondary": ["research"],
-    "tags": ["数据分析", "可视化", "AI分析", "免费"],
-    "use_cases": ["Excel/CSV数据快速分析", "自动生成图表", "自然语言数据查询"],
+    "categories_secondary": [
+      "research"
+    ],
+    "tags": [
+      "数据分析",
+      "可视化",
+      "AI分析",
+      "免费"
+    ],
+    "use_cases": [
+      "Excel/CSV数据快速分析",
+      "自动生成图表",
+      "自然语言数据查询"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 20, "free_tier_limits": "基础分析"},
-    "platform": ["web"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 20,
+      "free_tier_limits": "基础分析"
+    },
+    "platform": [
+      "web"
+    ],
     "api_available": false,
     "open_source": false,
-    "model_base": ["GPT-4", "Claude"],
-    "company": {"name": "Julius Technology", "country": "US", "founded_year": 2023, "funding_stage": "seed"},
-    "ratings": {"overall": 4.3, "ease_of_use": 4.7, "value_for_money": 4.4, "output_quality": 4.1, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["数据分析工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 3000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4",
+      "Claude"
+    ],
+    "company": {
+      "name": "Julius Technology",
+      "country": "US",
+      "founded_year": 2023,
+      "funding_stage": "seed"
+    },
+    "ratings": {
+      "overall": 4.3,
+      "ease_of_use": 4.7,
+      "value_for_money": 4.4,
+      "output_quality": 4.1,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "数据分析工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 3000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Julius AI 是一个对话式数据分析工具，上传 CSV/Excel 数据后即可通过自然语言进行分析和可视化。支持自动生成图表、发现数据趋势和回答数据问题。免费版提供基础分析，Pro 版 $20/月。基于 GPT-4 和 Claude 模型。对于没有编程背景但需要数据分析能力的业务人员来说非常实用。"
   },
   {
     "id": "a1b2c3d4-0017-4000-8000-000000000017",
@@ -497,29 +1325,80 @@
     "description_short": "领先的 BI 可视化平台，已集成 AI Pulse 智能洞察",
     "category_primary": "data-analytics",
     "categories_secondary": [],
-    "tags": ["BI", "数据可视化", "企业", "Salesforce"],
-    "use_cases": ["企业仪表盘搭建", "自动异常检测", "数据趋势分析"],
+    "tags": [
+      "BI",
+      "数据可视化",
+      "企业",
+      "Salesforce"
+    ],
+    "use_cases": [
+      "企业仪表盘搭建",
+      "自动异常检测",
+      "数据趋势分析"
+    ],
     "pricing_model": "paid",
-    "pricing_detail": {"currency": "USD", "starting_price": 15, "plans": [
-      {"name": "Viewer", "price_monthly": 15},
-      {"name": "Explorer", "price_monthly": 42},
-      {"name": "Creator", "price_monthly": 75}
-    ]},
-    "platform": ["web", "mac", "windows"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 15,
+      "plans": [
+        {
+          "name": "Viewer",
+          "price_monthly": 15
+        },
+        {
+          "name": "Explorer",
+          "price_monthly": 42
+        },
+        {
+          "name": "Creator",
+          "price_monthly": 75
+        }
+      ]
+    },
+    "platform": [
+      "web",
+      "mac",
+      "windows"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Tableau AI / Einstein"],
-    "company": {"name": "Tableau (Salesforce)", "country": "US", "founded_year": 2003, "funding_stage": "public"},
-    "ratings": {"overall": 4.5, "ease_of_use": 3.8, "value_for_money": 3.5, "output_quality": 4.7, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["数据分析工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 8000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Tableau AI / Einstein"
+    ],
+    "company": {
+      "name": "Tableau (Salesforce)",
+      "country": "US",
+      "founded_year": 2003,
+      "funding_stage": "public"
+    },
+    "ratings": {
+      "overall": 4.5,
+      "ease_of_use": 3.8,
+      "value_for_money": 3.5,
+      "output_quality": 4.7,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "数据分析工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 8000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Tableau 是领先的商业智能和数据可视化平台，由 Salesforce 收购。AI Pulse 功能可以自动检测数据异常和趋势，无需手动查找。Viewer 版 $15/月，Explorer 版 $42/月，Creator 版 $75/月。支持连接几乎所有数据源。在企业级 BI 市场占有率最高，交互式仪表盘功能强大。"
   },
   {
     "id": "a1b2c3d4-0018-4000-8000-000000000018",
@@ -529,29 +1408,82 @@
     "url": "https://surferseo.com",
     "description_short": "AI 驱动的 SEO 内容优化工具，实时评分和关键词建议",
     "category_primary": "marketing-seo",
-    "categories_secondary": ["text-writing"],
-    "tags": ["SEO", "内容优化", "关键词", "SERP分析"],
-    "use_cases": ["SEO文章优化评分", "关键词聚类", "内容大纲生成", "竞品内容分析"],
+    "categories_secondary": [
+      "text-writing"
+    ],
+    "tags": [
+      "SEO",
+      "内容优化",
+      "关键词",
+      "SERP分析"
+    ],
+    "use_cases": [
+      "SEO文章优化评分",
+      "关键词聚类",
+      "内容大纲生成",
+      "竞品内容分析"
+    ],
     "pricing_model": "paid",
-    "pricing_detail": {"currency": "USD", "starting_price": 79, "plans": [
-      {"name": "Essential", "price_monthly": 79},
-      {"name": "Scale", "price_monthly": 175}
-    ]},
-    "platform": ["web", "chrome-extension"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 79,
+      "plans": [
+        {
+          "name": "Essential",
+          "price_monthly": 79
+        },
+        {
+          "name": "Scale",
+          "price_monthly": 175
+        }
+      ]
+    },
+    "platform": [
+      "web",
+      "chrome-extension"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Surfer proprietary"],
-    "company": {"name": "Surfer SEO", "country": "PL", "founded_year": 2017, "funding_stage": "bootstrapped"},
-    "ratings": {"overall": 4.4, "ease_of_use": 4.2, "value_for_money": 3.9, "output_quality": 4.5, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["内容营销工作流", "SEO工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "25% recurring", "cookie_days": 60},
-    "traffic_estimate": {"monthly_visits": 2500000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Surfer proprietary"
+    ],
+    "company": {
+      "name": "Surfer SEO",
+      "country": "PL",
+      "founded_year": 2017,
+      "funding_stage": "bootstrapped"
+    },
+    "ratings": {
+      "overall": 4.4,
+      "ease_of_use": 4.2,
+      "value_for_money": 3.9,
+      "output_quality": 4.5,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "内容营销工作流",
+      "SEO工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "25% recurring",
+      "cookie_days": 60
+    },
+    "traffic_estimate": {
+      "monthly_visits": 2500000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Surfer SEO 是一款 AI 驱动的 SEO 内容优化工具，通过分析 SERP 数据实时评分和优化文章。功能包括关键词聚类、内容大纲生成和竞品内容分析。Essential 版 $79/月，Scale 版 $175/月。与 Jasper 有深度集成。来自波兰，Bootstrapped 运营。对于内容营销团队来说是 SEO 工作流的核心工具。"
   },
   {
     "id": "a1b2c3d4-0019-4000-8000-000000000019",
@@ -561,30 +1493,85 @@
     "url": "https://www.semrush.com",
     "description_short": "全能型 SEO 和数字营销平台，集成 AI 写作和分析",
     "category_primary": "marketing-seo",
-    "categories_secondary": ["data-analytics"],
-    "tags": ["SEO", "竞品分析", "关键词研究", "广告分析"],
-    "use_cases": ["关键词研究和排名追踪", "竞品 SEO 分析", "反向链接审计", "付费广告分析"],
+    "categories_secondary": [
+      "data-analytics"
+    ],
+    "tags": [
+      "SEO",
+      "竞品分析",
+      "关键词研究",
+      "广告分析"
+    ],
+    "use_cases": [
+      "关键词研究和排名追踪",
+      "竞品 SEO 分析",
+      "反向链接审计",
+      "付费广告分析"
+    ],
     "pricing_model": "paid",
-    "pricing_detail": {"currency": "USD", "starting_price": 130, "plans": [
-      {"name": "Pro", "price_monthly": 130},
-      {"name": "Guru", "price_monthly": 250},
-      {"name": "Business", "price_monthly": 500}
-    ]},
-    "platform": ["web"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 130,
+      "plans": [
+        {
+          "name": "Pro",
+          "price_monthly": 130
+        },
+        {
+          "name": "Guru",
+          "price_monthly": 250
+        },
+        {
+          "name": "Business",
+          "price_monthly": 500
+        }
+      ]
+    },
+    "platform": [
+      "web"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Semrush proprietary + GPT"],
-    "company": {"name": "Semrush Holdings Inc.", "country": "US", "founded_year": 2008, "funding_stage": "public"},
-    "ratings": {"overall": 4.6, "ease_of_use": 4.0, "value_for_money": 3.7, "output_quality": 4.7, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["SEO工作流", "内容营销工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "$200 per sale + $10 per trial", "cookie_days": 120},
-    "traffic_estimate": {"monthly_visits": 30000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Semrush proprietary + GPT"
+    ],
+    "company": {
+      "name": "Semrush Holdings Inc.",
+      "country": "US",
+      "founded_year": 2008,
+      "funding_stage": "public"
+    },
+    "ratings": {
+      "overall": 4.6,
+      "ease_of_use": 4.0,
+      "value_for_money": 3.7,
+      "output_quality": 4.7,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "SEO工作流",
+      "内容营销工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "$200 per sale + $10 per trial",
+      "cookie_days": 120
+    },
+    "traffic_estimate": {
+      "monthly_visits": 30000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Semrush 是全球最大的 SEO 和数字营销平台之一，功能覆盖关键词研究、竞品分析、反向链接审计、排名追踪、付费广告分析等。Pro 版 $130/月，Guru 版 $250/月。已上市（NYSE: SEMR）。AI 功能集成了内容写作和优化建议。对于专业 SEO 团队来说几乎是必备工具。Affiliate 佣金 $200/sale，是最高的之一。"
   },
   {
     "id": "a1b2c3d4-0020-4000-8000-000000000020",
@@ -593,27 +1580,79 @@
     "slug": "grammarly",
     "url": "https://www.grammarly.com",
     "description_short": "AI 写作助手，语法纠错 + 风格优化 + AI 改写",
-    "category_primary": "marketing-seo",
-    "categories_secondary": ["text-writing", "productivity"],
-    "tags": ["语法检查", "AI写作", "润色", "英语"],
-    "use_cases": ["英文写作语法检查", "邮件措辞优化", "学术论文润色", "商务沟通改善"],
+    "category_primary": "text-writing",
+    "categories_secondary": [
+      "productivity",
+      "marketing-seo"
+    ],
+    "tags": [
+      "语法检查",
+      "AI写作",
+      "润色",
+      "英语"
+    ],
+    "use_cases": [
+      "英文写作语法检查",
+      "邮件措辞优化",
+      "学术论文润色",
+      "商务沟通改善"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 12, "free_tier_limits": "基础语法检查"},
-    "platform": ["web", "mac", "windows", "ios", "android", "chrome-extension"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 12,
+      "free_tier_limits": "基础语法检查"
+    },
+    "platform": [
+      "web",
+      "mac",
+      "windows",
+      "ios",
+      "android",
+      "chrome-extension"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Grammarly proprietary"],
-    "company": {"name": "Grammarly Inc.", "country": "US", "founded_year": 2009, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.5, "ease_of_use": 4.8, "value_for_money": 4.2, "output_quality": 4.4, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["内容营销工作流", "办公效率工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "$20/Premium + $0.20/free signup", "cookie_days": 90},
-    "traffic_estimate": {"monthly_visits": 60000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Grammarly proprietary"
+    ],
+    "company": {
+      "name": "Grammarly Inc.",
+      "country": "US",
+      "founded_year": 2009,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.5,
+      "ease_of_use": 4.8,
+      "value_for_money": 4.2,
+      "output_quality": 4.4,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "内容营销工作流",
+      "办公效率工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "$20/Premium + $0.20/free signup",
+      "cookie_days": 90
+    },
+    "traffic_estimate": {
+      "monthly_visits": 60000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-22T08:00:00Z",
+    "description_full": "Grammarly 是全球最广泛使用的 AI 写作助手，拥有 3000 万+ 注册用户。核心功能是英文语法纠错和写作风格优化，Premium 版增加 AI 改写功能。免费版基础语法检查，Premium 版 $12/月。全平台覆盖（Web、桌面、手机、Chrome 插件），几乎可以在任何写作场景中使用。注意：只支持英文。"
   },
   {
     "id": "a1b2c3d4-0021-4000-8000-000000000021",
@@ -623,30 +1662,88 @@
     "url": "https://www.intercom.com",
     "description_short": "AI 客服平台，Fin AI Agent 可自动解决 65%+ 对话",
     "category_primary": "customer-support",
-    "categories_secondary": ["e-commerce"],
-    "tags": ["AI客服", "聊天机器人", "工单", "SaaS"],
-    "use_cases": ["自动客服回复", "工单智能分流", "知识库问答", "客户引导"],
+    "categories_secondary": [
+      "e-commerce"
+    ],
+    "tags": [
+      "AI客服",
+      "聊天机器人",
+      "工单",
+      "SaaS"
+    ],
+    "use_cases": [
+      "自动客服回复",
+      "工单智能分流",
+      "知识库问答",
+      "客户引导"
+    ],
     "pricing_model": "paid",
-    "pricing_detail": {"currency": "USD", "starting_price": 29, "plans": [
-      {"name": "Essential", "price_monthly": 29, "features": ["Fin AI at $0.99/resolution"]},
-      {"name": "Advanced", "price_monthly": 85},
-      {"name": "Expert", "price_monthly": 132}
-    ]},
-    "platform": ["web", "ios", "android"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 29,
+      "plans": [
+        {
+          "name": "Essential",
+          "price_monthly": 29,
+          "features": [
+            "Fin AI at $0.99/resolution"
+          ]
+        },
+        {
+          "name": "Advanced",
+          "price_monthly": 85
+        },
+        {
+          "name": "Expert",
+          "price_monthly": 132
+        }
+      ]
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["GPT-4", "Intercom proprietary"],
-    "company": {"name": "Intercom Inc.", "country": "US", "founded_year": 2011, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.4, "ease_of_use": 4.2, "value_for_money": 3.6, "output_quality": 4.5, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["客服工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 8000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4",
+      "Intercom proprietary"
+    ],
+    "company": {
+      "name": "Intercom Inc.",
+      "country": "US",
+      "founded_year": 2011,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.4,
+      "ease_of_use": 4.2,
+      "value_for_money": 3.6,
+      "output_quality": 4.5,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "客服工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 8000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Intercom 是企业级 AI 客服平台，Fin AI Agent 可以自动解决 65%+ 的客户对话。Essential 版 $29/月，Fin AI 按解决量收费（$0.99/次）。支持多渠道（网页聊天、邮件、社交媒体），API 丰富。被众多 SaaS 公司采用作为客服和用户沟通的核心工具。Series C+ 融资。"
   },
   {
     "id": "a1b2c3d4-0022-4000-8000-000000000022",
@@ -657,29 +1754,80 @@
     "description_short": "企业级客服平台 + AI Agent，自动化工单处理和回复",
     "category_primary": "customer-support",
     "categories_secondary": [],
-    "tags": ["AI客服", "工单系统", "企业级", "ITSM"],
-    "use_cases": ["大规模工单自动分类", "AI自动回复", "客服知识库管理"],
+    "tags": [
+      "AI客服",
+      "工单系统",
+      "企业级",
+      "ITSM"
+    ],
+    "use_cases": [
+      "大规模工单自动分类",
+      "AI自动回复",
+      "客服知识库管理"
+    ],
     "pricing_model": "paid",
-    "pricing_detail": {"currency": "USD", "starting_price": 19, "plans": [
-      {"name": "Support Team", "price_monthly": 19},
-      {"name": "Suite Growth", "price_monthly": 55},
-      {"name": "Suite Professional", "price_monthly": 115}
-    ]},
-    "platform": ["web", "ios", "android"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 19,
+      "plans": [
+        {
+          "name": "Support Team",
+          "price_monthly": 19
+        },
+        {
+          "name": "Suite Growth",
+          "price_monthly": 55
+        },
+        {
+          "name": "Suite Professional",
+          "price_monthly": 115
+        }
+      ]
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Zendesk AI"],
-    "company": {"name": "Zendesk Inc.", "country": "US", "founded_year": 2007, "funding_stage": "public"},
-    "ratings": {"overall": 4.3, "ease_of_use": 4.0, "value_for_money": 3.5, "output_quality": 4.3, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["客服工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 15000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Zendesk AI"
+    ],
+    "company": {
+      "name": "Zendesk Inc.",
+      "country": "US",
+      "founded_year": 2007,
+      "funding_stage": "public"
+    },
+    "ratings": {
+      "overall": 4.3,
+      "ease_of_use": 4.0,
+      "value_for_money": 3.5,
+      "output_quality": 4.3,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "客服工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 15000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Zendesk 是全球领先的企业客服平台，AI Agent 功能自动化工单分类和回复。Support Team 版 $19/月起，Suite Professional 版 $115/月。已上市。功能覆盖工单系统、知识库、实时聊天和 AI 自动化。特别适合中大型企业的多渠道客服运营。"
   },
   {
     "id": "a1b2c3d4-0023-4000-8000-000000000023",
@@ -689,26 +1837,73 @@
     "url": "https://www.tidio.com",
     "description_short": "中小企业 AI 客服聊天工具，Lyro AI 自动解答常见问题",
     "category_primary": "customer-support",
-    "categories_secondary": ["e-commerce"],
-    "tags": ["AI客服", "在线聊天", "中小企业", "Shopify"],
-    "use_cases": ["电商在线客服", "FAQ自动回答", "访客转化引导"],
+    "categories_secondary": [
+      "e-commerce"
+    ],
+    "tags": [
+      "AI客服",
+      "在线聊天",
+      "中小企业",
+      "Shopify"
+    ],
+    "use_cases": [
+      "电商在线客服",
+      "FAQ自动回答",
+      "访客转化引导"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 29, "free_tier_limits": "50 conversations"},
-    "platform": ["web", "ios", "android"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 29,
+      "free_tier_limits": "50 conversations"
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Lyro AI"],
-    "company": {"name": "Tidio Ltd.", "country": "PL", "founded_year": 2013, "funding_stage": "series-b"},
-    "ratings": {"overall": 4.2, "ease_of_use": 4.5, "value_for_money": 4.3, "output_quality": 4.0, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["电商运营流", "客服工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "20% recurring", "cookie_days": 90},
-    "traffic_estimate": {"monthly_visits": 3000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Lyro AI"
+    ],
+    "company": {
+      "name": "Tidio Ltd.",
+      "country": "PL",
+      "founded_year": 2013,
+      "funding_stage": "series-b"
+    },
+    "ratings": {
+      "overall": 4.2,
+      "ease_of_use": 4.5,
+      "value_for_money": 4.3,
+      "output_quality": 4.0,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "电商运营流",
+      "客服工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "20% recurring",
+      "cookie_days": 90
+    },
+    "traffic_estimate": {
+      "monthly_visits": 3000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Tidio 是面向中小企业的 AI 客服聊天工具，Lyro AI 可以自动解答常见问题。免费版支持 50 次对话，付费版 $29/月起。深度集成 Shopify，特别适合电商在线客服。操作简单，上手快，不需要技术背景。来自波兰，Series B 融资。"
   },
   {
     "id": "a1b2c3d4-0024-4000-8000-000000000024",
@@ -718,26 +1913,75 @@
     "url": "https://www.notion.so/product/ai",
     "description_short": "Notion 内置 AI 助手，文档摘要、写作辅助、知识库问答",
     "category_primary": "productivity",
-    "categories_secondary": ["text-writing"],
-    "tags": ["AI助手", "笔记", "知识管理", "团队协作"],
-    "use_cases": ["会议纪要自动整理", "文档摘要生成", "知识库智能问答", "待办事项提取"],
+    "categories_secondary": [
+      "text-writing"
+    ],
+    "tags": [
+      "AI助手",
+      "笔记",
+      "知识管理",
+      "团队协作"
+    ],
+    "use_cases": [
+      "会议纪要自动整理",
+      "文档摘要生成",
+      "知识库智能问答",
+      "待办事项提取"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 10, "free_tier_limits": "有限AI调用"},
-    "platform": ["web", "mac", "windows", "ios", "android"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 10,
+      "free_tier_limits": "有限AI调用"
+    },
+    "platform": [
+      "web",
+      "mac",
+      "windows",
+      "ios",
+      "android"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["GPT-4", "Claude"],
-    "company": {"name": "Notion Labs Inc.", "country": "US", "founded_year": 2013, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.5, "ease_of_use": 4.6, "value_for_money": 4.3, "output_quality": 4.2, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["办公效率工作流", "知识管理工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 80000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4",
+      "Claude"
+    ],
+    "company": {
+      "name": "Notion Labs Inc.",
+      "country": "US",
+      "founded_year": 2013,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.5,
+      "ease_of_use": 4.6,
+      "value_for_money": 4.3,
+      "output_quality": 4.2,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "办公效率工作流",
+      "知识管理工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 80000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Notion AI 是 Notion 内置的 AI 助手，可以在文档、数据库和项目管理中随时调用。功能包括文档摘要、写作辅助、知识库智能问答和待办事项提取。随 Notion 订阅提供（$10/月起），免费版有有限 AI 调用。基于 GPT-4 和 Claude 模型。对于已经使用 Notion 的团队来说是零门槛的 AI 升级。"
   },
   {
     "id": "a1b2c3d4-0025-4000-8000-000000000025",
@@ -747,26 +1991,74 @@
     "url": "https://otter.ai",
     "description_short": "AI 会议转录和笔记工具，实时记录并生成摘要",
     "category_primary": "productivity",
-    "categories_secondary": ["audio-voice"],
-    "tags": ["会议记录", "转录", "笔记", "AI摘要"],
-    "use_cases": ["会议实时转录", "自动生成会议摘要", "行动项提取", "跨会议搜索"],
+    "categories_secondary": [
+      "audio-voice"
+    ],
+    "tags": [
+      "会议记录",
+      "转录",
+      "笔记",
+      "AI摘要"
+    ],
+    "use_cases": [
+      "会议实时转录",
+      "自动生成会议摘要",
+      "行动项提取",
+      "跨会议搜索"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 17, "free_tier_limits": "300 min/month"},
-    "platform": ["web", "ios", "android", "chrome-extension"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 17,
+      "free_tier_limits": "300 min/month"
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android",
+      "chrome-extension"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Otter proprietary"],
-    "company": {"name": "Otter.ai Inc.", "country": "US", "founded_year": 2016, "funding_stage": "series-b"},
-    "ratings": {"overall": 4.3, "ease_of_use": 4.5, "value_for_money": 4.1, "output_quality": 4.2, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["办公效率工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "25%", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 6000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Otter proprietary"
+    ],
+    "company": {
+      "name": "Otter.ai Inc.",
+      "country": "US",
+      "founded_year": 2016,
+      "funding_stage": "series-b"
+    },
+    "ratings": {
+      "overall": 4.3,
+      "ease_of_use": 4.5,
+      "value_for_money": 4.1,
+      "output_quality": 4.2,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "办公效率工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "25%",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 6000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Otter.ai 是 AI 会议转录和笔记工具，实时记录会议内容并生成结构化摘要。免费版每月 300 分钟，Pro 版 $17/月。支持自动识别说话者、提取行动项和跨会议搜索。有 Chrome 插件和移动 App，可与 Zoom、Google Meet、Teams 集成。Series B 融资。"
   },
   {
     "id": "a1b2c3d4-0026-4000-8000-000000000026",
@@ -776,26 +2068,73 @@
     "url": "https://fireflies.ai",
     "description_short": "AI 会议助手，自动记录、转录和分析会议内容，支持100+语言",
     "category_primary": "productivity",
-    "categories_secondary": ["audio-voice"],
-    "tags": ["会议记录", "转录", "AI分析", "多语言", "中文友好"],
-    "use_cases": ["多语言会议转录", "客户会议分析", "销售通话洞察"],
+    "categories_secondary": [
+      "audio-voice"
+    ],
+    "tags": [
+      "会议记录",
+      "转录",
+      "AI分析",
+      "多语言",
+      "中文友好"
+    ],
+    "use_cases": [
+      "多语言会议转录",
+      "客户会议分析",
+      "销售通话洞察"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 10, "free_tier_limits": "有限转录额度"},
-    "platform": ["web", "chrome-extension"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 10,
+      "free_tier_limits": "有限转录额度"
+    },
+    "platform": [
+      "web",
+      "chrome-extension"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Fireflies proprietary"],
-    "company": {"name": "Fireflies.ai Inc.", "country": "US", "founded_year": 2016, "funding_stage": "series-a"},
-    "ratings": {"overall": 4.2, "ease_of_use": 4.4, "value_for_money": 4.3, "output_quality": 4.0, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["办公效率工作流", "销售工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "20%", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 5000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Fireflies proprietary"
+    ],
+    "company": {
+      "name": "Fireflies.ai Inc.",
+      "country": "US",
+      "founded_year": 2016,
+      "funding_stage": "series-a"
+    },
+    "ratings": {
+      "overall": 4.2,
+      "ease_of_use": 4.4,
+      "value_for_money": 4.3,
+      "output_quality": 4.0,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "办公效率工作流",
+      "销售工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "20%",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 5000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Fireflies.ai 是 AI 会议助手，自动记录、转录和分析会议内容。支持 100+ 语言，中文转录效果好。免费版有限额度，Pro 版 $10/月。可以跨多个会议搜索关键内容，还有客户会议分析和销售通话洞察功能。API 支持集成到 CRM 和其他工具。Series A 融资。"
   },
   {
     "id": "a1b2c3d4-0027-4000-8000-000000000027",
@@ -806,25 +2145,68 @@
     "description_short": "可汗学院 AI 家教，苏格拉底式教学，引导而非直接给答案",
     "category_primary": "education",
     "categories_secondary": [],
-    "tags": ["AI教育", "家教", "K12", "免费"],
-    "use_cases": ["数学辅导", "编程入门教学", "SAT备考", "课程理解辅助"],
+    "tags": [
+      "AI教育",
+      "家教",
+      "K12",
+      "免费"
+    ],
+    "use_cases": [
+      "数学辅导",
+      "编程入门教学",
+      "SAT备考",
+      "课程理解辅助"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 4, "free_tier_limits": "教师免费"},
-    "platform": ["web", "ios", "android"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 4,
+      "free_tier_limits": "教师免费"
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android"
+    ],
     "api_available": false,
     "open_source": false,
-    "model_base": ["GPT-4"],
-    "company": {"name": "Khan Academy", "country": "US", "founded_year": 2008, "funding_stage": "unknown"},
-    "ratings": {"overall": 4.5, "ease_of_use": 4.6, "value_for_money": 4.8, "output_quality": 4.3, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["教育工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 0, "traffic_trend": "rising", "data_source": "Bundled with Khan Academy", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4"
+    ],
+    "company": {
+      "name": "Khan Academy",
+      "country": "US",
+      "founded_year": 2008,
+      "funding_stage": "unknown"
+    },
+    "ratings": {
+      "overall": 4.5,
+      "ease_of_use": 4.6,
+      "value_for_money": 4.8,
+      "output_quality": 4.3,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "教育工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 0,
+      "traffic_trend": "rising",
+      "data_source": "Bundled with Khan Academy",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Khanmigo 是可汗学院推出的 AI 家教，采用苏格拉底式教学法——不直接给答案，而是通过引导式提问帮助学生理解。教师免费使用，学生/家长 $4/月。覆盖数学、编程、SAT 备考等科目。基于 GPT-4 定制，是教育领域最受信任的 AI 工具之一。"
   },
   {
     "id": "a1b2c3d4-0028-4000-8000-000000000028",
@@ -835,25 +2217,67 @@
     "description_short": "AI 驱动的语言学习 App，GPT-4 支持角色扮演和解释功能",
     "category_primary": "education",
     "categories_secondary": [],
-    "tags": ["语言学习", "AI教育", "游戏化", "中文友好"],
-    "use_cases": ["外语学习", "口语练习", "AI角色扮演对话"],
+    "tags": [
+      "语言学习",
+      "AI教育",
+      "游戏化",
+      "中文友好"
+    ],
+    "use_cases": [
+      "外语学习",
+      "口语练习",
+      "AI角色扮演对话"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 14, "free_tier_limits": "基础课程免费"},
-    "platform": ["web", "ios", "android"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 14,
+      "free_tier_limits": "基础课程免费"
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android"
+    ],
     "api_available": false,
     "open_source": false,
-    "model_base": ["GPT-4"],
-    "company": {"name": "Duolingo Inc.", "country": "US", "founded_year": 2011, "funding_stage": "public"},
-    "ratings": {"overall": 4.5, "ease_of_use": 4.9, "value_for_money": 4.4, "output_quality": 4.2, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["教育工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 100000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4"
+    ],
+    "company": {
+      "name": "Duolingo Inc.",
+      "country": "US",
+      "founded_year": 2011,
+      "funding_stage": "public"
+    },
+    "ratings": {
+      "overall": 4.5,
+      "ease_of_use": 4.9,
+      "value_for_money": 4.4,
+      "output_quality": 4.2,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "教育工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 100000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Duolingo Max 是 Duolingo 的 AI 增强版本，基于 GPT-4 提供角色扮演对话和解释功能。免费版提供基础课程，Max 版 $14/月。全球最受欢迎的语言学习 App，游戏化设计让学习过程有趣。已上市（NASDAQ: DUOL），月活超过 1 亿。AI 功能让语言练习更加个性化和互动。"
   },
   {
     "id": "a1b2c3d4-0029-4000-8000-000000000029",
@@ -863,26 +2287,70 @@
     "url": "https://quizlet.com",
     "description_short": "AI 学习卡片和测试生成工具，自动从笔记创建学习材料",
     "category_primary": "education",
-    "categories_secondary": ["productivity"],
-    "tags": ["学习卡片", "AI教育", "备考", "学生"],
-    "use_cases": ["自动生成学习卡片", "AI模拟考试", "学习进度追踪"],
+    "categories_secondary": [
+      "productivity"
+    ],
+    "tags": [
+      "学习卡片",
+      "AI教育",
+      "备考",
+      "学生"
+    ],
+    "use_cases": [
+      "自动生成学习卡片",
+      "AI模拟考试",
+      "学习进度追踪"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 8, "free_tier_limits": "基础卡片功能"},
-    "platform": ["web", "ios", "android"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 8,
+      "free_tier_limits": "基础卡片功能"
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android"
+    ],
     "api_available": false,
     "open_source": false,
-    "model_base": ["GPT-4"],
-    "company": {"name": "Quizlet Inc.", "country": "US", "founded_year": 2005, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.3, "ease_of_use": 4.7, "value_for_money": 4.2, "output_quality": 4.0, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["教育工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 50000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4"
+    ],
+    "company": {
+      "name": "Quizlet Inc.",
+      "country": "US",
+      "founded_year": 2005,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.3,
+      "ease_of_use": 4.7,
+      "value_for_money": 4.2,
+      "output_quality": 4.0,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "教育工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 50000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Quizlet AI 是全球最大的学习卡片平台，AI 功能可以从笔记自动生成学习卡片和模拟测试。免费版提供基础卡片功能，Plus 版 $8/月增加 AI 功能。月访问量超 5000 万，在学生群体中极受欢迎。Series C+ 融资。"
   },
   {
     "id": "a1b2c3d4-0030-4000-8000-000000000030",
@@ -892,26 +2360,80 @@
     "url": "https://www.canva.com",
     "description_short": "全民设计平台，Magic Studio AI 功能覆盖图片/视频/文档设计",
     "category_primary": "design-ui",
-    "categories_secondary": ["image-generation", "video"],
-    "tags": ["设计", "AI设计", "模板", "社交媒体", "中文友好"],
-    "use_cases": ["社交媒体海报设计", "AI一键换背景", "AI生成图片", "品牌物料批量制作"],
+    "categories_secondary": [
+      "image-generation",
+      "video"
+    ],
+    "tags": [
+      "设计",
+      "AI设计",
+      "模板",
+      "社交媒体",
+      "中文友好"
+    ],
+    "use_cases": [
+      "社交媒体海报设计",
+      "AI一键换背景",
+      "AI生成图片",
+      "品牌物料批量制作"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 13, "free_tier_limits": "基础模板+有限AI"},
-    "platform": ["web", "mac", "windows", "ios", "android"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 13,
+      "free_tier_limits": "基础模板+有限AI"
+    },
+    "platform": [
+      "web",
+      "mac",
+      "windows",
+      "ios",
+      "android"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Canva proprietary", "Stable Diffusion"],
-    "company": {"name": "Canva Pty Ltd.", "country": "AU", "founded_year": 2012, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.6, "ease_of_use": 4.9, "value_for_money": 4.7, "output_quality": 4.2, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["自媒体工作流", "设计工作流", "内容营销工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "Up to $36/sale", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 500000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Canva proprietary",
+      "Stable Diffusion"
+    ],
+    "company": {
+      "name": "Canva Pty Ltd.",
+      "country": "AU",
+      "founded_year": 2012,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.6,
+      "ease_of_use": 4.9,
+      "value_for_money": 4.7,
+      "output_quality": 4.2,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "自媒体工作流",
+      "设计工作流",
+      "内容营销工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "Up to $36/sale",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 500000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Canva 是全球最受欢迎的在线设计平台，Magic Studio AI 功能覆盖图片生成、一键换背景、文案生成和视频编辑。免费版提供基础模板和有限 AI 功能，Pro 版 $13/月。月访问量超 5 亿，支持全平台。中文界面完善，模板针对中文设计场景优化。对于非设计师来说是最友好的设计工具。"
   },
   {
     "id": "a1b2c3d4-0031-4000-8000-000000000031",
@@ -922,25 +2444,69 @@
     "description_short": "专业 UI/UX 设计平台，AI Make 功能可通过文字生成界面设计",
     "category_primary": "design-ui",
     "categories_secondary": [],
-    "tags": ["UI设计", "UX", "原型", "协作", "AI设计"],
-    "use_cases": ["AI生成UI设计稿", "设计系统管理", "原型快速制作"],
+    "tags": [
+      "UI设计",
+      "UX",
+      "原型",
+      "协作",
+      "AI设计"
+    ],
+    "use_cases": [
+      "AI生成UI设计稿",
+      "设计系统管理",
+      "原型快速制作"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 15, "free_tier_limits": "3个文件"},
-    "platform": ["web", "mac", "windows"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 15,
+      "free_tier_limits": "3个文件"
+    },
+    "platform": [
+      "web",
+      "mac",
+      "windows"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Figma AI"],
-    "company": {"name": "Figma Inc. (Adobe)", "country": "US", "founded_year": 2012, "funding_stage": "public"},
-    "ratings": {"overall": 4.7, "ease_of_use": 4.4, "value_for_money": 4.3, "output_quality": 4.7, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["设计工作流", "开发工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 50000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Figma AI"
+    ],
+    "company": {
+      "name": "Figma Inc. (Adobe)",
+      "country": "US",
+      "founded_year": 2012,
+      "funding_stage": "public"
+    },
+    "ratings": {
+      "overall": 4.7,
+      "ease_of_use": 4.4,
+      "value_for_money": 4.3,
+      "output_quality": 4.7,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "设计工作流",
+      "开发工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 50000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Figma 是专业 UI/UX 设计的行业标准工具，AI Make 功能可以通过文字描述生成界面设计。生成的设计遵循用户的设计系统，保持一致性。免费版支持 3 个文件，Professional 版 $15/月。被 Adobe 收购后资源更加丰富。在产品设计团队中使用率最高。"
   },
   {
     "id": "a1b2c3d4-0032-4000-8000-000000000032",
@@ -951,25 +2517,67 @@
     "description_short": "AI 快速原型设计工具，截图/草图转可编辑设计稿",
     "category_primary": "design-ui",
     "categories_secondary": [],
-    "tags": ["原型设计", "AI设计", "低代码", "草图转UI"],
-    "use_cases": ["手绘草图转UI设计", "截图转可编辑原型", "快速产品原型"],
+    "tags": [
+      "原型设计",
+      "AI设计",
+      "低代码",
+      "草图转UI"
+    ],
+    "use_cases": [
+      "手绘草图转UI设计",
+      "截图转可编辑原型",
+      "快速产品原型"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 12, "free_tier_limits": "2个项目"},
-    "platform": ["web"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 12,
+      "free_tier_limits": "2个项目"
+    },
+    "platform": [
+      "web"
+    ],
     "api_available": false,
     "open_source": false,
-    "model_base": ["Uizard proprietary"],
-    "company": {"name": "Uizard Technologies", "country": "DK", "founded_year": 2018, "funding_stage": "series-a"},
-    "ratings": {"overall": 4.0, "ease_of_use": 4.5, "value_for_money": 4.0, "output_quality": 3.8, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["设计工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "20%", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 1500000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Uizard proprietary"
+    ],
+    "company": {
+      "name": "Uizard Technologies",
+      "country": "DK",
+      "founded_year": 2018,
+      "funding_stage": "series-a"
+    },
+    "ratings": {
+      "overall": 4.0,
+      "ease_of_use": 4.5,
+      "value_for_money": 4.0,
+      "output_quality": 3.8,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "设计工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "20%",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 1500000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Uizard 是一款 AI 快速原型设计工具，可以将手绘草图或截图转换为可编辑的 UI 设计稿。免费版支持 2 个项目，Pro 版 $12/月。特别适合产品经理和非设计背景的人快速将想法变成可视化原型。来自丹麦，Series A 融资。"
   },
   {
     "id": "a1b2c3d4-0033-4000-8000-000000000033",
@@ -979,26 +2587,76 @@
     "url": "https://www.perplexity.ai",
     "description_short": "AI 搜索引擎，对话式搜索 + 实时引用来源",
     "category_primary": "research",
-    "categories_secondary": ["productivity"],
-    "tags": ["AI搜索", "研究", "引用", "对话式"],
-    "use_cases": ["深度研究和调研", "带引用的问答", "学术文献搜索", "竞品调研"],
+    "categories_secondary": [
+      "productivity"
+    ],
+    "tags": [
+      "AI搜索",
+      "研究",
+      "引用",
+      "对话式"
+    ],
+    "use_cases": [
+      "深度研究和调研",
+      "带引用的问答",
+      "学术文献搜索",
+      "竞品调研"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 20, "free_tier_limits": "5 Pro searches/day"},
-    "platform": ["web", "ios", "android", "mac", "chrome-extension"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 20,
+      "free_tier_limits": "5 Pro searches/day"
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android",
+      "mac",
+      "chrome-extension"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["GPT-4", "Claude", "Perplexity proprietary"],
-    "company": {"name": "Perplexity AI Inc.", "country": "US", "founded_year": 2022, "funding_stage": "series-b"},
-    "ratings": {"overall": 4.6, "ease_of_use": 4.8, "value_for_money": 4.5, "output_quality": 4.5, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["研究工作流", "内容营销工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 100000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4",
+      "Claude",
+      "Perplexity proprietary"
+    ],
+    "company": {
+      "name": "Perplexity AI Inc.",
+      "country": "US",
+      "founded_year": 2022,
+      "funding_stage": "series-b"
+    },
+    "ratings": {
+      "overall": 4.6,
+      "ease_of_use": 4.8,
+      "value_for_money": 4.5,
+      "output_quality": 4.5,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "研究工作流",
+      "内容营销工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 100000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Perplexity AI 是新一代 AI 搜索引擎，以对话式搜索和实时引用来源为特色。每个回答都附带来源链接，可验证可追溯。免费版每天 5 次 Pro 搜索，Pro 版 $20/月。支持 Web、iOS、Android、Mac 和 Chrome 插件。在深度研究和调研场景中比传统搜索引擎效率高很多。Series B 融资，月访问量超 1 亿。"
   },
   {
     "id": "a1b2c3d4-0034-4000-8000-000000000034",
@@ -1008,26 +2666,69 @@
     "url": "https://elicit.com",
     "description_short": "AI 学术研究助手，自动搜索和摘要学术论文",
     "category_primary": "research",
-    "categories_secondary": ["education"],
-    "tags": ["学术研究", "论文", "文献综述", "AI搜索"],
-    "use_cases": ["学术论文搜索和筛选", "文献综述辅助", "研究问题探索"],
+    "categories_secondary": [
+      "education"
+    ],
+    "tags": [
+      "学术研究",
+      "论文",
+      "文献综述",
+      "AI搜索"
+    ],
+    "use_cases": [
+      "学术论文搜索和筛选",
+      "文献综述辅助",
+      "研究问题探索"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 10, "free_tier_limits": "基础搜索"},
-    "platform": ["web"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 10,
+      "free_tier_limits": "基础搜索"
+    },
+    "platform": [
+      "web"
+    ],
     "api_available": false,
     "open_source": false,
-    "model_base": ["GPT-4", "Elicit proprietary"],
-    "company": {"name": "Ought Inc.", "country": "US", "founded_year": 2021, "funding_stage": "series-a"},
-    "ratings": {"overall": 4.2, "ease_of_use": 4.4, "value_for_money": 4.3, "output_quality": 4.1, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["研究工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 3000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4",
+      "Elicit proprietary"
+    ],
+    "company": {
+      "name": "Ought Inc.",
+      "country": "US",
+      "founded_year": 2021,
+      "funding_stage": "series-a"
+    },
+    "ratings": {
+      "overall": 4.2,
+      "ease_of_use": 4.4,
+      "value_for_money": 4.3,
+      "output_quality": 4.1,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "研究工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 3000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Elicit 是 AI 学术研究助手，从 2 亿+ 学术论文中搜索和提取信息。不只列出论文，还能总结关键发现、方法和结论。免费版提供基础搜索，Pro 版 $10/月。特别适合文献综述和研究问题探索。对于研究者和研究生来说可以大幅缩短文献调研时间。"
   },
   {
     "id": "a1b2c3d4-0035-4000-8000-000000000035",
@@ -1037,26 +2738,74 @@
     "url": "https://www.shopify.com/magic",
     "description_short": "Shopify 内置 AI，自动生成产品描述、营销邮件和背景图",
     "category_primary": "e-commerce",
-    "categories_secondary": ["text-writing", "image-generation"],
-    "tags": ["电商", "Shopify", "产品描述", "AI营销"],
-    "use_cases": ["产品描述自动生成", "营销邮件撰写", "产品图背景替换", "聊天回复建议"],
+    "categories_secondary": [
+      "text-writing",
+      "image-generation"
+    ],
+    "tags": [
+      "电商",
+      "Shopify",
+      "产品描述",
+      "AI营销"
+    ],
+    "use_cases": [
+      "产品描述自动生成",
+      "营销邮件撰写",
+      "产品图背景替换",
+      "聊天回复建议"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 0, "free_tier_limits": "随 Shopify 套餐提供"},
-    "platform": ["web", "ios", "android"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 0,
+      "free_tier_limits": "随 Shopify 套餐提供"
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Shopify proprietary"],
-    "company": {"name": "Shopify Inc.", "country": "CA", "founded_year": 2006, "funding_stage": "public"},
-    "ratings": {"overall": 4.2, "ease_of_use": 4.6, "value_for_money": 4.8, "output_quality": 3.8, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["电商运营流"],
-    "affiliate": {"has_program": true, "commission_rate": "Up to $150/referral", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 0, "traffic_trend": "rising", "data_source": "Bundled with Shopify", "updated_at": "2026-03"},
+    "model_base": [
+      "Shopify proprietary"
+    ],
+    "company": {
+      "name": "Shopify Inc.",
+      "country": "CA",
+      "founded_year": 2006,
+      "funding_stage": "public"
+    },
+    "ratings": {
+      "overall": 4.2,
+      "ease_of_use": 4.6,
+      "value_for_money": 4.8,
+      "output_quality": 3.8,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "电商运营流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "Up to $150/referral",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 0,
+      "traffic_trend": "rising",
+      "data_source": "Bundled with Shopify",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Shopify Magic 是 Shopify 内置的 AI 功能套件，覆盖产品描述生成、营销邮件撰写、产品图背景替换和聊天回复建议。随 Shopify 套餐免费提供。对于 Shopify 商家来说是零额外成本的 AI 升级。在产品描述和邮件营销方面效果实用，但创作质量不如专业 AI 写作工具。"
   },
   {
     "id": "a1b2c3d4-0036-4000-8000-000000000036",
@@ -1066,26 +2815,72 @@
     "url": "https://www.klaviyo.com",
     "description_short": "电商邮件/短信营销自动化平台，AI 优化发送时间和内容",
     "category_primary": "e-commerce",
-    "categories_secondary": ["marketing-seo"],
-    "tags": ["邮件营销", "电商", "自动化", "AI"],
-    "use_cases": ["电商邮件自动化", "客户细分", "AI预测最佳发送时间", "个性化推荐"],
+    "categories_secondary": [
+      "marketing-seo"
+    ],
+    "tags": [
+      "邮件营销",
+      "电商",
+      "自动化",
+      "AI"
+    ],
+    "use_cases": [
+      "电商邮件自动化",
+      "客户细分",
+      "AI预测最佳发送时间",
+      "个性化推荐"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 20, "free_tier_limits": "250 contacts, 500 emails/month"},
-    "platform": ["web"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 20,
+      "free_tier_limits": "250 contacts, 500 emails/month"
+    },
+    "platform": [
+      "web"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Klaviyo AI"],
-    "company": {"name": "Klaviyo Inc.", "country": "US", "founded_year": 2012, "funding_stage": "public"},
-    "ratings": {"overall": 4.4, "ease_of_use": 4.0, "value_for_money": 3.8, "output_quality": 4.5, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["电商运营流", "内容营销工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "15% recurring", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 5000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Klaviyo AI"
+    ],
+    "company": {
+      "name": "Klaviyo Inc.",
+      "country": "US",
+      "founded_year": 2012,
+      "funding_stage": "public"
+    },
+    "ratings": {
+      "overall": 4.4,
+      "ease_of_use": 4.0,
+      "value_for_money": 3.8,
+      "output_quality": 4.5,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "电商运营流",
+      "内容营销工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "15% recurring",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 5000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Klaviyo 是电商邮件和短信营销自动化平台的领导者，AI 功能优化发送时间、内容和客户细分。免费版支持 250 个联系人和 500 封邮件，付费版 $20/月起按联系人数计费。已上市（NYSE: KVYO）。与 Shopify 深度集成，是电商 DTC 品牌的营销标配。"
   },
   {
     "id": "a1b2c3d4-0037-4000-8000-000000000037",
@@ -1095,30 +2890,96 @@
     "url": "https://www.gorgias.com",
     "description_short": "电商专用 AI 客服平台，深度集成 Shopify 订单数据",
     "category_primary": "e-commerce",
-    "categories_secondary": ["customer-support"],
-    "tags": ["电商客服", "Shopify", "工单", "自动化"],
-    "use_cases": ["电商退换货自动处理", "订单状态查询AI回复", "多渠道客服统一管理"],
+    "categories_secondary": [
+      "customer-support"
+    ],
+    "tags": [
+      "电商客服",
+      "Shopify",
+      "工单",
+      "自动化"
+    ],
+    "use_cases": [
+      "电商退换货自动处理",
+      "订单状态查询AI回复",
+      "多渠道客服统一管理"
+    ],
     "pricing_model": "paid",
-    "pricing_detail": {"currency": "USD", "starting_price": 10, "plans": [
-      {"name": "Starter", "price_monthly": 10, "features": ["50 tickets"]},
-      {"name": "Basic", "price_monthly": 60, "features": ["300 tickets"]},
-      {"name": "Pro", "price_monthly": 360, "features": ["2000 tickets"]}
-    ]},
-    "platform": ["web", "ios", "android"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 10,
+      "plans": [
+        {
+          "name": "Starter",
+          "price_monthly": 10,
+          "features": [
+            "50 tickets"
+          ]
+        },
+        {
+          "name": "Basic",
+          "price_monthly": 60,
+          "features": [
+            "300 tickets"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price_monthly": 360,
+          "features": [
+            "2000 tickets"
+          ]
+        }
+      ]
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["GPT-4", "Gorgias proprietary"],
-    "company": {"name": "Gorgias Inc.", "country": "US", "founded_year": 2015, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.3, "ease_of_use": 4.3, "value_for_money": 3.9, "output_quality": 4.2, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["电商运营流", "客服工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "20%", "cookie_days": 90},
-    "traffic_estimate": {"monthly_visits": 2000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4",
+      "Gorgias proprietary"
+    ],
+    "company": {
+      "name": "Gorgias Inc.",
+      "country": "US",
+      "founded_year": 2015,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.3,
+      "ease_of_use": 4.3,
+      "value_for_money": 3.9,
+      "output_quality": 4.2,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "电商运营流",
+      "客服工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "20%",
+      "cookie_days": 90
+    },
+    "traffic_estimate": {
+      "monthly_visits": 2000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Gorgias 是电商专用 AI 客服平台，深度集成 Shopify 订单数据。AI 可以直接查看订单状态、处理退换货、回答产品问题。Starter 版 $10/月（50 工单），Basic 版 $60/月。Series C+ 融资。对于 Shopify 商家来说，客服效率提升显著。"
   },
   {
     "id": "a1b2c3d4-0038-4000-8000-000000000038",
@@ -1128,26 +2989,69 @@
     "url": "https://stripe.com",
     "description_short": "支付基础设施 + AI 欺诈检测和收入优化",
     "category_primary": "finance",
-    "categories_secondary": ["e-commerce"],
-    "tags": ["支付", "计费", "欺诈检测", "SaaS"],
-    "use_cases": ["AI欺诈交易检测", "自动化计费管理", "收入预测"],
+    "categories_secondary": [
+      "e-commerce"
+    ],
+    "tags": [
+      "支付",
+      "计费",
+      "欺诈检测",
+      "SaaS"
+    ],
+    "use_cases": [
+      "AI欺诈交易检测",
+      "自动化计费管理",
+      "收入预测"
+    ],
     "pricing_model": "paid",
-    "pricing_detail": {"currency": "USD", "starting_price": 0, "free_tier_limits": "按交易量计费 2.9%+30¢"},
-    "platform": ["web", "api"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 0,
+      "free_tier_limits": "按交易量计费 2.9%+30¢"
+    },
+    "platform": [
+      "web",
+      "api"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Stripe proprietary"],
-    "company": {"name": "Stripe Inc.", "country": "US", "founded_year": 2010, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.6, "ease_of_use": 4.2, "value_for_money": 4.0, "output_quality": 4.7, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["SaaS工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 40000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Stripe proprietary"
+    ],
+    "company": {
+      "name": "Stripe Inc.",
+      "country": "US",
+      "founded_year": 2010,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.6,
+      "ease_of_use": 4.2,
+      "value_for_money": 4.0,
+      "output_quality": 4.7,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "SaaS工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 40000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Stripe 是全球领先的支付基础设施，AI 功能主要体现在 Radar 欺诈检测和 Revenue Recovery 收入优化。按交易量计费（2.9%+30c），无月费。API 设计优雅，是 SaaS 和电商的支付首选。上市估值超千亿。AI 欺诈检测准确率行业领先。"
   },
   {
     "id": "a1b2c3d4-0039-4000-8000-000000000039",
@@ -1157,26 +3061,72 @@
     "url": "https://ramp.com",
     "description_short": "AI 企业财务管理平台，自动化费用报告和预算控制",
     "category_primary": "finance",
-    "categories_secondary": ["productivity"],
-    "tags": ["财务管理", "费用报告", "AI", "企业"],
-    "use_cases": ["自动费用分类", "重复订阅检测", "预算超支预警"],
+    "categories_secondary": [
+      "productivity"
+    ],
+    "tags": [
+      "财务管理",
+      "费用报告",
+      "AI",
+      "企业"
+    ],
+    "use_cases": [
+      "自动费用分类",
+      "重复订阅检测",
+      "预算超支预警"
+    ],
     "pricing_model": "free",
-    "pricing_detail": {"currency": "USD", "starting_price": 0, "free_tier_limits": "核心功能免费"},
-    "platform": ["web", "ios", "android"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 0,
+      "free_tier_limits": "核心功能免费"
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Ramp proprietary"],
-    "company": {"name": "Ramp Financial Inc.", "country": "US", "founded_year": 2019, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.5, "ease_of_use": 4.6, "value_for_money": 4.8, "output_quality": 4.3, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["财务工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "$300/referral", "cookie_days": 90},
-    "traffic_estimate": {"monthly_visits": 3000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Ramp proprietary"
+    ],
+    "company": {
+      "name": "Ramp Financial Inc.",
+      "country": "US",
+      "founded_year": 2019,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.5,
+      "ease_of_use": 4.6,
+      "value_for_money": 4.8,
+      "output_quality": 4.3,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "财务工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "$300/referral",
+      "cookie_days": 90
+    },
+    "traffic_estimate": {
+      "monthly_visits": 3000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Ramp 是 AI 驱动的企业费用管理平台，自动化费用报告、预算控制和重复订阅检测。核心功能免费。Series C+ 融资，增长极快。AI 自动分类费用、检测异常支出、预警预算超支。对于中型企业的财务团队来说可以节省大量人工审核时间。"
   },
   {
     "id": "a1b2c3d4-0040-4000-8000-000000000040",
@@ -1186,26 +3136,73 @@
     "url": "https://www.deel.com",
     "description_short": "全球薪酬和 HR 平台，AI 辅助合规和合同管理",
     "category_primary": "hr-recruiting",
-    "categories_secondary": ["finance"],
-    "tags": ["HR", "全球薪酬", "合规", "远程办公"],
-    "use_cases": ["全球远程团队薪酬发放", "跨国合规自动化", "AI合同生成"],
+    "categories_secondary": [
+      "finance"
+    ],
+    "tags": [
+      "HR",
+      "全球薪酬",
+      "合规",
+      "远程办公"
+    ],
+    "use_cases": [
+      "全球远程团队薪酬发放",
+      "跨国合规自动化",
+      "AI合同生成"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 0, "free_tier_limits": "Deel HR 免费版"},
-    "platform": ["web", "ios", "android", "slack"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 0,
+      "free_tier_limits": "Deel HR 免费版"
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android",
+      "slack"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Deel proprietary"],
-    "company": {"name": "Deel Inc.", "country": "US", "founded_year": 2019, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.4, "ease_of_use": 4.3, "value_for_money": 4.0, "output_quality": 4.3, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["HR工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "$100/referral", "cookie_days": 60},
-    "traffic_estimate": {"monthly_visits": 8000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Deel proprietary"
+    ],
+    "company": {
+      "name": "Deel Inc.",
+      "country": "US",
+      "founded_year": 2019,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.4,
+      "ease_of_use": 4.3,
+      "value_for_money": 4.0,
+      "output_quality": 4.3,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "HR工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "$100/referral",
+      "cookie_days": 60
+    },
+    "traffic_estimate": {
+      "monthly_visits": 8000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Deel 是全球薪酬和 HR 平台，AI 辅助跨国合规和合同管理。支持 150+ 国家的薪酬发放和合规。Deel HR 免费版功能已较完善，EOR（Employer of Record）服务按人计费。Series C+ 融资，估值超 120 亿。对于远程团队和全球化企业来说是管理国际员工的首选平台。"
   },
   {
     "id": "a1b2c3d4-0041-4000-8000-000000000041",
@@ -1216,25 +3213,65 @@
     "description_short": "AI 视频面试和人才评估平台，自动化招聘流程",
     "category_primary": "hr-recruiting",
     "categories_secondary": [],
-    "tags": ["AI招聘", "视频面试", "人才评估", "企业"],
-    "use_cases": ["AI视频面试", "候选人自动筛选", "技能评估"],
+    "tags": [
+      "AI招聘",
+      "视频面试",
+      "人才评估",
+      "企业"
+    ],
+    "use_cases": [
+      "AI视频面试",
+      "候选人自动筛选",
+      "技能评估"
+    ],
     "pricing_model": "contact-sales",
-    "pricing_detail": {"currency": "USD"},
-    "platform": ["web", "ios", "android"],
+    "pricing_detail": {
+      "currency": "USD"
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["HireVue proprietary"],
-    "company": {"name": "HireVue Inc.", "country": "US", "founded_year": 2004, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.0, "ease_of_use": 4.1, "value_for_money": 3.5, "output_quality": 4.0, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["HR工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 2000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "HireVue proprietary"
+    ],
+    "company": {
+      "name": "HireVue Inc.",
+      "country": "US",
+      "founded_year": 2004,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.0,
+      "ease_of_use": 4.1,
+      "value_for_money": 3.5,
+      "output_quality": 4.0,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "HR工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 2000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "HireVue 是 AI 视频面试和人才评估平台，用 AI 分析候选人的视频面试表现和技能测试结果。定制报价，面向中大型企业。功能包括自动化面试安排、AI 评估和招聘漏斗分析。在大规模校招和批量招聘场景中效率极高。但 AI 面试评估也引发了一些关于公平性的讨论。"
   },
   {
     "id": "a1b2c3d4-0042-4000-8000-000000000042",
@@ -1244,26 +3281,67 @@
     "url": "https://www.harvey.ai",
     "description_short": "专为法律行业打造的 AI 助手，合同审查和法律研究",
     "category_primary": "legal",
-    "categories_secondary": ["research"],
-    "tags": ["法律AI", "合同审查", "法律研究", "企业"],
-    "use_cases": ["合同条款审查", "法律案例研究", "尽职调查辅助"],
+    "categories_secondary": [
+      "research"
+    ],
+    "tags": [
+      "法律AI",
+      "合同审查",
+      "法律研究",
+      "企业"
+    ],
+    "use_cases": [
+      "合同条款审查",
+      "法律案例研究",
+      "尽职调查辅助"
+    ],
     "pricing_model": "contact-sales",
-    "pricing_detail": {"currency": "USD"},
-    "platform": ["web"],
+    "pricing_detail": {
+      "currency": "USD"
+    },
+    "platform": [
+      "web"
+    ],
     "api_available": false,
     "open_source": false,
-    "model_base": ["GPT-4", "Harvey proprietary"],
-    "company": {"name": "Harvey AI Inc.", "country": "US", "founded_year": 2022, "funding_stage": "series-b"},
-    "ratings": {"overall": 4.3, "ease_of_use": 4.0, "value_for_money": 3.5, "output_quality": 4.5, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["法律工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 500000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4",
+      "Harvey proprietary"
+    ],
+    "company": {
+      "name": "Harvey AI Inc.",
+      "country": "US",
+      "founded_year": 2022,
+      "funding_stage": "series-b"
+    },
+    "ratings": {
+      "overall": 4.3,
+      "ease_of_use": 4.0,
+      "value_for_money": 3.5,
+      "output_quality": 4.5,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "法律工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 500000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Harvey AI 是专为法律行业打造的 AI 助手，基于 GPT-4 针对法律场景深度优化。功能涵盖合同审查、法律案例研究和尽职调查。面向律所和企业法务部门，定制报价。Series B 融资，被多家国际顶级律所采用。在法律 AI 赛道中认可度最高。"
   },
   {
     "id": "a1b2c3d4-0043-4000-8000-000000000043",
@@ -1274,25 +3352,64 @@
     "description_short": "AI 合同起草工具，集成 Word，自动建议条款和修改",
     "category_primary": "legal",
     "categories_secondary": [],
-    "tags": ["法律AI", "合同起草", "Word集成"],
-    "use_cases": ["合同自动起草", "条款建议和风险标注", "合同模板生成"],
+    "tags": [
+      "法律AI",
+      "合同起草",
+      "Word集成"
+    ],
+    "use_cases": [
+      "合同自动起草",
+      "条款建议和风险标注",
+      "合同模板生成"
+    ],
     "pricing_model": "contact-sales",
-    "pricing_detail": {"currency": "USD"},
-    "platform": ["web", "windows"],
+    "pricing_detail": {
+      "currency": "USD"
+    },
+    "platform": [
+      "web",
+      "windows"
+    ],
     "api_available": false,
     "open_source": false,
-    "model_base": ["GPT-4", "Spellbook proprietary"],
-    "company": {"name": "Rally Legal Inc.", "country": "CA", "founded_year": 2020, "funding_stage": "series-a"},
-    "ratings": {"overall": 4.1, "ease_of_use": 4.3, "value_for_money": 3.8, "output_quality": 4.2, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["法律工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 300000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4",
+      "Spellbook proprietary"
+    ],
+    "company": {
+      "name": "Rally Legal Inc.",
+      "country": "CA",
+      "founded_year": 2020,
+      "funding_stage": "series-a"
+    },
+    "ratings": {
+      "overall": 4.1,
+      "ease_of_use": 4.3,
+      "value_for_money": 3.8,
+      "output_quality": 4.2,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "法律工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 300000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Spellbook 是 AI 合同起草工具，集成在 Microsoft Word 中。AI 可以自动建议合同条款、标注风险条款和生成合同模板。面向律师和法务人员，定制报价。来自加拿大，Series A 融资。通过 Word 插件使用，学习成本低。"
   },
   {
     "id": "a1b2c3d4-0044-4000-8000-000000000044",
@@ -1303,25 +3420,64 @@
     "description_short": "医疗健康 AI 助手，专注安全性的临床沟通和患者随访",
     "category_primary": "healthcare",
     "categories_secondary": [],
-    "tags": ["医疗AI", "患者沟通", "临床", "安全"],
-    "use_cases": ["患者术后随访", "用药提醒对话", "健康教育"],
+    "tags": [
+      "医疗AI",
+      "患者沟通",
+      "临床",
+      "安全"
+    ],
+    "use_cases": [
+      "患者术后随访",
+      "用药提醒对话",
+      "健康教育"
+    ],
     "pricing_model": "contact-sales",
-    "pricing_detail": {"currency": "USD"},
-    "platform": ["web", "api"],
+    "pricing_detail": {
+      "currency": "USD"
+    },
+    "platform": [
+      "web",
+      "api"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Hippocratic proprietary"],
-    "company": {"name": "Hippocratic AI Inc.", "country": "US", "founded_year": 2023, "funding_stage": "series-a"},
-    "ratings": {"overall": 4.0, "ease_of_use": 4.0, "value_for_money": 3.5, "output_quality": 4.2, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["医疗工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 200000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
-    "status": "published",
+    "model_base": [
+      "Hippocratic proprietary"
+    ],
+    "company": {
+      "name": "Hippocratic AI Inc.",
+      "country": "US",
+      "founded_year": 2023,
+      "funding_stage": "series-a"
+    },
+    "ratings": {
+      "overall": 4.0,
+      "ease_of_use": 4.0,
+      "value_for_money": 3.5,
+      "output_quality": 4.2,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "医疗工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 200000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
+    "status": "pending-review",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-22T08:00:00Z",
+    "description_full": "Hippocratic AI 是专注安全性的医疗健康 AI 助手，用于临床沟通和患者随访。功能包括术后随访、用药提醒和健康教育。以安全性为第一原则设计，所有输出经过多层验证。Series A 融资。目前站点可达性有波动，状态为待审核。"
   },
   {
     "id": "a1b2c3d4-0045-4000-8000-000000000045",
@@ -1331,26 +3487,70 @@
     "url": "https://lumalabs.ai",
     "description_short": "AI 3D 建模和视频生成工具，Dream Machine 文字转视频",
     "category_primary": "video",
-    "categories_secondary": ["design-ui"],
-    "tags": ["3D建模", "AI视频", "NeRF", "创意"],
-    "use_cases": ["文字/图片转3D模型", "AI视频生成", "产品3D展示"],
+    "categories_secondary": [
+      "design-ui"
+    ],
+    "tags": [
+      "3D建模",
+      "AI视频",
+      "NeRF",
+      "创意"
+    ],
+    "use_cases": [
+      "文字/图片转3D模型",
+      "AI视频生成",
+      "产品3D展示"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 10, "free_tier_limits": "30 generations/month"},
-    "platform": ["web", "ios"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 10,
+      "free_tier_limits": "30 generations/month"
+    },
+    "platform": [
+      "web",
+      "ios"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Luma Dream Machine"],
-    "company": {"name": "Luma AI Inc.", "country": "US", "founded_year": 2021, "funding_stage": "series-b"},
-    "ratings": {"overall": 4.2, "ease_of_use": 4.3, "value_for_money": 4.2, "output_quality": 4.3, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["短视频工作流", "设计工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 5000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Luma Dream Machine"
+    ],
+    "company": {
+      "name": "Luma AI Inc.",
+      "country": "US",
+      "founded_year": 2021,
+      "funding_stage": "series-b"
+    },
+    "ratings": {
+      "overall": 4.2,
+      "ease_of_use": 4.3,
+      "value_for_money": 4.2,
+      "output_quality": 4.3,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "短视频工作流",
+      "设计工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 5000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Luma AI 是 AI 3D 建模和视频生成工具，Dream Machine 可以从文字或图片生成高质量视频。同时支持手机拍摄生成 3D 模型（NeRF 技术）。免费版每月 30 次生成，Standard 版 $10/月。API 支持集成。在 3D + 视频的交叉领域有独特定位。Series B 融资。"
   },
   {
     "id": "a1b2c3d4-0046-4000-8000-000000000046",
@@ -1360,30 +3560,96 @@
     "url": "https://chat.openai.com",
     "description_short": "OpenAI 的通用 AI 助手，全球最广泛使用的 AI 对话工具",
     "category_primary": "productivity",
-    "categories_secondary": ["text-writing", "code-dev", "research", "image-generation"],
-    "tags": ["AI对话", "通用助手", "GPT-4", "中文友好"],
-    "use_cases": ["日常问答", "代码辅助", "内容写作", "数据分析", "图片生成"],
+    "categories_secondary": [
+      "text-writing",
+      "code-dev",
+      "research",
+      "image-generation"
+    ],
+    "tags": [
+      "AI对话",
+      "通用助手",
+      "GPT-4",
+      "中文友好"
+    ],
+    "use_cases": [
+      "日常问答",
+      "代码辅助",
+      "内容写作",
+      "数据分析",
+      "图片生成"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 20, "free_tier_limits": "GPT-4o mini 免费", "plans": [
-      {"name": "Plus", "price_monthly": 20},
-      {"name": "Pro", "price_monthly": 200},
-      {"name": "Team", "price_monthly": 25}
-    ]},
-    "platform": ["web", "ios", "android", "mac", "windows", "api"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 20,
+      "free_tier_limits": "GPT-4o mini 免费",
+      "plans": [
+        {
+          "name": "Plus",
+          "price_monthly": 20
+        },
+        {
+          "name": "Pro",
+          "price_monthly": 200
+        },
+        {
+          "name": "Team",
+          "price_monthly": 25
+        }
+      ]
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android",
+      "mac",
+      "windows",
+      "api"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["GPT-4o", "GPT-4", "o1"],
-    "company": {"name": "OpenAI", "country": "US", "founded_year": 2015, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.7, "ease_of_use": 4.9, "value_for_money": 4.3, "output_quality": 4.6, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["办公效率工作流", "开发工作流", "研究工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 2000000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4o",
+      "GPT-4",
+      "o1"
+    ],
+    "company": {
+      "name": "OpenAI",
+      "country": "US",
+      "founded_year": 2015,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.7,
+      "ease_of_use": 4.9,
+      "value_for_money": 4.3,
+      "output_quality": 4.6,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "办公效率工作流",
+      "开发工作流",
+      "研究工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 2000000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "ChatGPT 是 OpenAI 推出的 AI 对话助手，全球使用最广泛的 AI 产品。基于 GPT-4o 模型，支持文字对话、图片生成（DALL-E）、代码执行、文件分析和联网搜索。免费版使用 GPT-4o mini，Plus 版 $20/月，Pro 版 $200/月。全平台覆盖。月访问量超 20 亿，是 AI 时代的标志性产品。"
   },
   {
     "id": "a1b2c3d4-0047-4000-8000-000000000047",
@@ -1393,26 +3659,77 @@
     "url": "https://claude.ai",
     "description_short": "Anthropic 的 AI 助手，以安全性和长文理解著称",
     "category_primary": "productivity",
-    "categories_secondary": ["text-writing", "code-dev", "research"],
-    "tags": ["AI对话", "长文本", "安全AI", "编程"],
-    "use_cases": ["长文档分析", "代码审查", "深度对话推理", "学术写作"],
+    "categories_secondary": [
+      "text-writing",
+      "code-dev",
+      "research"
+    ],
+    "tags": [
+      "AI对话",
+      "长文本",
+      "安全AI",
+      "编程"
+    ],
+    "use_cases": [
+      "长文档分析",
+      "代码审查",
+      "深度对话推理",
+      "学术写作"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 20, "free_tier_limits": "有限对话额度"},
-    "platform": ["web", "ios", "android", "api"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 20,
+      "free_tier_limits": "有限对话额度"
+    },
+    "platform": [
+      "web",
+      "ios",
+      "android",
+      "api"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Claude 3.5 Sonnet", "Claude 3 Opus"],
-    "company": {"name": "Anthropic", "country": "US", "founded_year": 2021, "funding_stage": "series-c-plus"},
-    "ratings": {"overall": 4.6, "ease_of_use": 4.7, "value_for_money": 4.2, "output_quality": 4.7, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["办公效率工作流", "开发工作流", "研究工作流"],
-    "affiliate": {"has_program": false},
-    "traffic_estimate": {"monthly_visits": 100000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Claude 3.5 Sonnet",
+      "Claude 3 Opus"
+    ],
+    "company": {
+      "name": "Anthropic",
+      "country": "US",
+      "founded_year": 2021,
+      "funding_stage": "series-c-plus"
+    },
+    "ratings": {
+      "overall": 4.6,
+      "ease_of_use": 4.7,
+      "value_for_money": 4.2,
+      "output_quality": 4.7,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "办公效率工作流",
+      "开发工作流",
+      "研究工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 100000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Claude 是 Anthropic 推出的 AI 助手，以安全性、长文理解和输出质量著称。200K token 上下文窗口，处理长文档能力业界顶尖。写作风格自然，幻觉率低。免费版有限额度，Pro 版 $20/月。在学术写作、代码审查和深度分析场景中被很多专业用户认为优于 ChatGPT。Series C+ 融资。"
   },
   {
     "id": "a1b2c3d4-0048-4000-8000-000000000048",
@@ -1422,30 +3739,84 @@
     "url": "https://pictory.ai",
     "description_short": "AI 文字转视频工具，自动将博客文章变成短视频",
     "category_primary": "video",
-    "categories_secondary": ["marketing-seo"],
-    "tags": ["AI视频", "文字转视频", "短视频", "内容复用"],
-    "use_cases": ["博客文章转短视频", "长视频剪辑为精华片段", "自动添加字幕"],
+    "categories_secondary": [
+      "marketing-seo"
+    ],
+    "tags": [
+      "AI视频",
+      "文字转视频",
+      "短视频",
+      "内容复用"
+    ],
+    "use_cases": [
+      "博客文章转短视频",
+      "长视频剪辑为精华片段",
+      "自动添加字幕"
+    ],
     "pricing_model": "paid",
-    "pricing_detail": {"currency": "USD", "starting_price": 19, "plans": [
-      {"name": "Starter", "price_monthly": 19},
-      {"name": "Professional", "price_monthly": 39},
-      {"name": "Teams", "price_monthly": 99}
-    ]},
-    "platform": ["web"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 19,
+      "plans": [
+        {
+          "name": "Starter",
+          "price_monthly": 19
+        },
+        {
+          "name": "Professional",
+          "price_monthly": 39
+        },
+        {
+          "name": "Teams",
+          "price_monthly": 99
+        }
+      ]
+    },
+    "platform": [
+      "web"
+    ],
     "api_available": false,
     "open_source": false,
-    "model_base": ["Pictory proprietary"],
-    "company": {"name": "Pictory AI", "country": "US", "founded_year": 2020, "funding_stage": "seed"},
-    "ratings": {"overall": 4.0, "ease_of_use": 4.4, "value_for_money": 3.9, "output_quality": 3.8, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["自媒体工作流", "内容营销工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "30% recurring", "cookie_days": 60},
-    "traffic_estimate": {"monthly_visits": 2000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Pictory proprietary"
+    ],
+    "company": {
+      "name": "Pictory AI",
+      "country": "US",
+      "founded_year": 2020,
+      "funding_stage": "seed"
+    },
+    "ratings": {
+      "overall": 4.0,
+      "ease_of_use": 4.4,
+      "value_for_money": 3.9,
+      "output_quality": 3.8,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "自媒体工作流",
+      "内容营销工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "30% recurring",
+      "cookie_days": 60
+    },
+    "traffic_estimate": {
+      "monthly_visits": 2000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Pictory 是 AI 文字转视频工具，可以自动将博客文章或脚本变成短视频。支持长视频剪辑为精华片段和自动添加字幕。Starter 版 $19/月，Professional 版 $39/月。特别适合内容复用——把已有的文字内容快速转化为视频格式发布到不同平台。"
   },
   {
     "id": "a1b2c3d4-0049-4000-8000-000000000049",
@@ -1455,26 +3826,74 @@
     "url": "https://zapier.com",
     "description_short": "自动化工作流平台，AI 驱动的跨应用连接和任务自动化",
     "category_primary": "productivity",
-    "categories_secondary": ["e-commerce", "marketing-seo"],
-    "tags": ["自动化", "工作流", "集成", "无代码"],
-    "use_cases": ["跨应用自动化", "AI驱动的工作流", "数据同步", "自动化邮件触发"],
+    "categories_secondary": [
+      "e-commerce",
+      "marketing-seo"
+    ],
+    "tags": [
+      "自动化",
+      "工作流",
+      "集成",
+      "无代码"
+    ],
+    "use_cases": [
+      "跨应用自动化",
+      "AI驱动的工作流",
+      "数据同步",
+      "自动化邮件触发"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 20, "free_tier_limits": "100 tasks/month"},
-    "platform": ["web"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 20,
+      "free_tier_limits": "100 tasks/month"
+    },
+    "platform": [
+      "web"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["GPT-4", "Zapier proprietary"],
-    "company": {"name": "Zapier Inc.", "country": "US", "founded_year": 2011, "funding_stage": "bootstrapped"},
-    "ratings": {"overall": 4.5, "ease_of_use": 4.3, "value_for_money": 4.0, "output_quality": 4.4, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["自动化工作流", "电商运营流"],
-    "affiliate": {"has_program": true, "commission_rate": "25% recurring", "cookie_days": 90},
-    "traffic_estimate": {"monthly_visits": 20000000, "traffic_trend": "stable", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "GPT-4",
+      "Zapier proprietary"
+    ],
+    "company": {
+      "name": "Zapier Inc.",
+      "country": "US",
+      "founded_year": 2011,
+      "funding_stage": "bootstrapped"
+    },
+    "ratings": {
+      "overall": 4.5,
+      "ease_of_use": 4.3,
+      "value_for_money": 4.0,
+      "output_quality": 4.4,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "自动化工作流",
+      "电商运营流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "25% recurring",
+      "cookie_days": 90
+    },
+    "traffic_estimate": {
+      "monthly_visits": 20000000,
+      "traffic_trend": "stable",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Zapier 是全球最大的工作流自动化平台，AI 功能让用户用自然语言描述需求即可创建自动化流程。免费版每月 100 个任务，付费版 $20/月起。集成 6000+ 应用，几乎可以连接任何 SaaS 工具。Bootstrapped 运营，无外部融资。对于非技术人员来说是最简单的自动化入门工具。"
   },
   {
     "id": "a1b2c3d4-0050-4000-8000-000000000050",
@@ -1484,25 +3903,73 @@
     "url": "https://firefly.adobe.com",
     "description_short": "Adobe 官方 AI 图像生成工具，商业安全，集成 Creative Cloud",
     "category_primary": "image-generation",
-    "categories_secondary": ["design-ui"],
-    "tags": ["AI绘图", "商用安全", "Adobe", "设计"],
-    "use_cases": ["商用安全图片生成", "Photoshop AI 功能", "矢量图AI生成", "品牌素材创作"],
+    "categories_secondary": [
+      "design-ui"
+    ],
+    "tags": [
+      "AI绘图",
+      "商用安全",
+      "Adobe",
+      "设计"
+    ],
+    "use_cases": [
+      "商用安全图片生成",
+      "Photoshop AI 功能",
+      "矢量图AI生成",
+      "品牌素材创作"
+    ],
     "pricing_model": "freemium",
-    "pricing_detail": {"currency": "USD", "starting_price": 10, "free_tier_limits": "25 generative credits/month"},
-    "platform": ["web", "mac", "windows"],
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 10,
+      "free_tier_limits": "25 generative credits/month"
+    },
+    "platform": [
+      "web",
+      "mac",
+      "windows"
+    ],
     "api_available": true,
     "open_source": false,
-    "model_base": ["Firefly Image 3"],
-    "company": {"name": "Adobe Inc.", "country": "US", "founded_year": 1982, "funding_stage": "public"},
-    "ratings": {"overall": 4.3, "ease_of_use": 4.5, "value_for_money": 4.0, "output_quality": 4.2, "review_count": 0},
-    "review": {"tested": false},
-    "workflow_tags": ["设计工作流", "内容营销工作流"],
-    "affiliate": {"has_program": true, "commission_rate": "85% first month / 8% recurring", "cookie_days": 30},
-    "traffic_estimate": {"monthly_visits": 15000000, "traffic_trend": "rising", "data_source": "SimilarWeb estimate", "updated_at": "2026-03"},
+    "model_base": [
+      "Firefly Image 3"
+    ],
+    "company": {
+      "name": "Adobe Inc.",
+      "country": "US",
+      "founded_year": 1982,
+      "funding_stage": "public"
+    },
+    "ratings": {
+      "overall": 4.3,
+      "ease_of_use": 4.5,
+      "value_for_money": 4.0,
+      "output_quality": 4.2,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "设计工作流",
+      "内容营销工作流"
+    ],
+    "affiliate": {
+      "has_program": true,
+      "commission_rate": "85% first month / 8% recurring",
+      "cookie_days": 30
+    },
+    "traffic_estimate": {
+      "monthly_visits": 15000000,
+      "traffic_trend": "rising",
+      "data_source": "SimilarWeb estimate",
+      "updated_at": "2026-03"
+    },
     "status": "published",
     "featured": false,
     "submitted_by": "editorial",
     "created_at": "2026-03-19T12:00:00Z",
-    "updated_at": "2026-03-19T12:00:00Z"
+    "updated_at": "2026-03-19T12:00:00Z",
+    "description_full": "Adobe Firefly 是 Adobe 官方的 AI 图像生成工具，最大特色是商用安全——所有训练数据来自授权内容，生成的图片可以放心商用。集成在 Photoshop、Illustrator 等 Creative Cloud 工具中。免费版每月 25 个生成积分，付费版 $10/月起。Affiliate 佣金结构诱人：首月 85% + 之后 8% recurring。"
   }
 ]
