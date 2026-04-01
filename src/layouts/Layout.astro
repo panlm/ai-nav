@@ -46,6 +46,12 @@ const fullTitle = `${title} | AI Nav`
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageURL} />
+
+    <!-- Plausible Analytics — update data-domain when custom domain is set -->
+    <script defer data-domain="ai-nav-liart.vercel.app" src="https://plausible.io/js/script.js"></script>
+
+    <!-- Google Search Console verification — replace content with actual verification code -->
+    <meta name="google-site-verification" content="REPLACE_WITH_VERIFICATION_CODE" />
   </head>
   <body class="min-h-screen bg-gray-50 text-gray-900 antialiased">
     <header class="sticky top-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur-sm">
@@ -118,5 +124,9 @@ const fullTitle = `${title} | AI Nav`
         </div>
       </div>
     </footer>
+  </body>
+</html>
+);
+    </script>
   </body>
 </html>
