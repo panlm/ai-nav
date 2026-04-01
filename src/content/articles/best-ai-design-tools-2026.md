@@ -2,7 +2,7 @@
 title: "2026 最佳 AI 设计工具完全指南：8 款工具深度对比"
 description: "不会设计？AI 设计工具让每个人都能做出专业级作品。8 款工具深度对比。"
 publishedAt: 2026-04-02
-category: "image"
+category: "design-ui"
 tags: ["设计工具", "AI设计", "工具对比", "Canva", "Midjourney"]
 keywords: ["AI设计工具", "best AI design tools 2026", "Canva vs Midjourney"]
 relatedTools: ["canva-ai", "midjourney", "adobe-firefly", "leonardo-ai"]
