@@ -3,6 +3,7 @@
 
 import batch1Raw from '../../data/tools-batch-1.json'
 import batch2Raw from '../../data/tools-batch-2.json'
+import batch3Raw from '../../data/tools-batch-3.json'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -240,6 +241,28 @@ const chineseSupportMap: Record<string, ChineseSupport> = {
   'lexica': 'english-only',
   'rezi': 'english-only',
   'pi-ai': 'supported',
+  // Batch 3
+  'medplum': 'english-only',
+  'nabla': 'english-only',
+  'viz-ai': 'english-only',
+  'semantic-scholar': 'english-only',
+  'research-rabbit': 'english-only',
+  'litmaps': 'english-only',
+  'quickbooks-ai': 'english-only',
+  'xero-ai': 'english-only',
+  'clio-ai': 'english-only',
+  'lawgeex': 'english-only',
+  'wordtune': 'english-only',
+  'rytr': 'supported',
+  'anyword': 'english-only',
+  'coursera-ai': 'supported',
+  'photoroom': 'supported',
+  'dify': 'native',
+  'mailchimp-ai': 'english-only',
+  'predis-ai': 'english-only',
+  'freshdesk-ai': 'english-only',
+  'wix-ai': 'supported',
+  'calendly-ai': 'english-only',
 }
 
 // ── Platform name normalization ─────────────────────────────────────────────
@@ -484,6 +507,7 @@ const mockOnlyTools: Tool[] = [
 
 const batch1Tools: Tool[] = (batch1Raw as any[]).map(mapBatchTool)
 const batch2Tools: Tool[] = (batch2Raw as any[]).map(mapBatchTool)
+const batch3Tools: Tool[] = (batch3Raw as any[]).map(mapBatchTool)
 
 // Merge: batch 1 first, then batch 2 (no overlap expected), then mock-only for anything still missing
 const slugSet = new Set<string>()
@@ -496,6 +520,12 @@ for (const t of batch1Tools) {
   }
 }
 for (const t of batch2Tools) {
+  if (!slugSet.has(t.slug)) {
+    slugSet.add(t.slug)
+    allTools.push(t)
+  }
+}
+for (const t of batch3Tools) {
   if (!slugSet.has(t.slug)) {
     slugSet.add(t.slug)
     allTools.push(t)
