@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ai-nav.dev/sitemap-index.xml
+Sitemap: https://ai-nav-liart.vercel.app/sitemap-index.xml
