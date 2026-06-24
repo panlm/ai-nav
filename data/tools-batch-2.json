@@ -4148,5 +4148,80 @@
     "submitted_by": "editorial",
     "created_at": "2026-03-27T08:00:00Z",
     "updated_at": "2026-03-27T08:00:00Z"
+  },
+  {
+    "id": "b1b2c3d4-0051-4000-8000-000000000051",
+    "locale": "zh",
+    "name": "Remio",
+    "slug": "remio",
+    "url": "https://remio.ai/",
+    "description_short": "本地优先的 AI memory 和个人知识库桌面应用",
+    "description_full": "Remio 是本地优先的 AI memory 和个人知识库桌面应用，可解析文件、网页、录音、邮件、消息、图片和笔记，并在本地建立索引与向量。用户可以更快检索自己的个人上下文，减少反复用 grep 或手动扫描文件带来的 token 消耗和整理成本。",
+    "category_primary": "productivity",
+    "categories_secondary": [
+      "research"
+    ],
+    "tags": [
+      "AI笔记",
+      "知识管理",
+      "本地优先",
+      "向量检索",
+      "个人知识库"
+    ],
+    "use_cases": [
+      "个人知识库检索",
+      "多格式文件解析",
+      "网页和录音资料整理",
+      "AI 上下文准备"
+    ],
+    "pricing_model": "freemium",
+    "pricing_detail": {
+      "currency": "USD",
+      "starting_price": 0
+    },
+    "platform": [
+      "macos",
+      "windows"
+    ],
+    "api_available": false,
+    "open_source": false,
+    "model_base": [
+      "Local index",
+      "Vector retrieval"
+    ],
+    "company": {
+      "name": "Remio",
+      "country": "US",
+      "founded_year": 2024,
+      "funding_stage": "unknown"
+    },
+    "ratings": {
+      "overall": 4.4,
+      "ease_of_use": 4.3,
+      "value_for_money": 4.4,
+      "output_quality": 4.3,
+      "review_count": 0
+    },
+    "review": {
+      "tested": false
+    },
+    "workflow_tags": [
+      "办公效率工作流",
+      "研究工作流"
+    ],
+    "affiliate": {
+      "has_program": false
+    },
+    "traffic_estimate": {
+      "monthly_visits": 0,
+      "traffic_trend": "unknown",
+      "data_source": "not estimated",
+      "updated_at": "2026-06"
+    },
+    "status": "published",
+    "featured": false,
+    "submitted_by": "editorial",
+    "created_at": "2026-06-24T08:00:00Z",
+    "updated_at": "2026-06-24T08:00:00Z"
   }
 ]
